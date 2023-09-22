@@ -1,10 +1,11 @@
-import reactLogo from "./assets/logo.svg";
+import { Logo } from "./components";
+
 import "./App.css";
 
 function App() {
   return (
     <section>
-      <img src={reactLogo} className="react" alt="React logo" />
+      <Logo alt="Andrew Brice logo" />
       <h1>Andrew Brice</h1>
       <p>Software Engineer</p>
     </section>
