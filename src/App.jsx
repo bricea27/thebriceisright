@@ -1,27 +1,19 @@
-import { Logo } from "./components";
-
 import { createUseStyles, ThemeProvider } from "react-jss";
+
+import { Logo } from "./components";
+import { theme } from "./theme";
 
 const useStyles = createUseStyles((theme) => ({
   root: {
-    alignItems: 'center',
+    alignItems: "center",
     background: theme.background.primary,
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    minHeight: '100vh',
-    width: '100vw',
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    minHeight: "100vh",
+    width: "100vw",
   },
 }));
-
-const theme = {
-  background: {
-    primary: "#F3EDE4"
-  },
-  text: {
-    secondary: '#8D866E'
-  }
-};
 
 const Main = (props) => {
   const classes = useStyles();
