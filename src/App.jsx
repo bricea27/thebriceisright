@@ -1,7 +1,6 @@
-import { createUseStyles, ThemeProvider } from "react-jss";
+import { createUseStyles } from "react-jss";
 
 import { Logo } from "./components";
-import { theme } from "./theme";
 
 const useStyles = createUseStyles((theme) => ({
   root: {
@@ -15,19 +14,13 @@ const useStyles = createUseStyles((theme) => ({
   },
 }));
 
-const Main = (props) => {
+const App = () => {
   const classes = useStyles();
 
-  return <div className={classes.root} {...props} />;
-};
-
-const App = () => {
   return (
-    <ThemeProvider theme={theme}>
-      <Main>
-        <Logo />
-      </Main>
-    </ThemeProvider>
+    <main className={classes.root}>
+      <Logo />
+    </main>
   );
 };
 
