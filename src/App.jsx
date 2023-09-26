@@ -1,4 +1,3 @@
-import clsx from "clsx";
 import { createUseStyles } from "react-jss";
 
 import { Logo } from "./components";
