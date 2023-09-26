@@ -1,35 +1,16 @@
-import { createUseStyles } from "react-jss";
-
-import { Logo } from "./components";
+import Logo from "./components/Logo";
 
 import headshot from "./assets/headshot.jpg";
 
-const useStyles = createUseStyles((theme) => ({
-  root: {
-    background: theme.background.primary,
-    display: "flex",
-    height: "100vh",
-    overflow: "hidden",
-    width: "100vw",
-  },
-  headshot: {
-    width: "100%",
-  },
-}));
-
-const App = () => {
-  const classes = useStyles();
-
+export default function App() {
   return (
-    <main className={classes.root}>
+    <main className="bg-background flex h-screen overflow-hidden w-screen">
       <div className="w-1/2 h-screen p-4">
-        <Logo style={{ width: 100 }} />
+        <Logo className="max-w-[100px] stroke-text-secondary" />
       </div>
-      <div className="w-1/2 h-screen">
-        <img className={classes.headshot} src={headshot} />
+      <div className="w-1/2">
+        <img alt="Andrew Brice headshot" src={headshot} />
       </div>
     </main>
   );
-};
-
-export default App;
+}
