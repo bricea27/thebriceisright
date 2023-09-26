@@ -11,13 +11,6 @@ const useStyles = createUseStyles((theme) => ({
     height: "100vh",
     overflow: "hidden",
     width: "100vw",
-    "& > section": {
-      width: "50%",
-      height: "100vh",
-      "&:first-child": {
-        padding: "1rem",
-      },
-    },
   },
   headshot: {
     width: "100%",
@@ -29,12 +22,12 @@ const App = () => {
 
   return (
     <main className={classes.root}>
-      <section>
+      <div className="w-1/2 h-screen p-4">
         <Logo style={{ width: 100 }} />
-      </section>
-      <section>
+      </div>
+      <div className="w-1/2 h-screen">
         <img className={classes.headshot} src={headshot} />
-      </section>
+      </div>
     </main>
   );
 };
