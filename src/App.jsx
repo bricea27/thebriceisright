@@ -19,7 +19,7 @@ export default function App() {
         </p>
       </div>
       <img
-        className="absolute -bottom-10 right-0 opacity-20 md:opacity-100 max-w-md md:max-w-l lg:max-w-xl"
+        className="absolute bottom-0 right-0 sm:opacity-20 md:opacity-100 hidden sm:block max-w-xl drop-shadow-xl"
         alt="Andrew Brice headshot"
         src={headshot}
       />
