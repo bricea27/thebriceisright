@@ -6,11 +6,11 @@ export default function App() {
   return (
     <main>
       <section className="flex flex-col place-content-center text-center w-full min-h-screen bg-text-primary">
-        <Logo className="max-w-[80px] md:max-w-[120px] mb-4 mx-auto mt-auto stroke-text-secondary" />
-        <h1 className="font-sans font-extrabold text-[calc(16px+3vw)] text-background tracking-tight">
+        <Logo className="animate animate-fade-in-up max-w-[80px] md:max-w-[120px] mb-4 mx-auto mt-auto stroke-text-secondary" />
+        <h1 className="animate animate-fade-in-right font-sans font-extrabold text-[calc(16px+3vw)] text-background tracking-tight">
           Andrew Brice
         </h1>
-        <h2 className="font-sans font-light uppercase text-xs sm:text-[calc(16px+0.25vw)] md:text-[calc(16px+0.8vw)] tracking-widest text-text-secondary">
+        <h2 className="animate animate-fade-in-left font-sans font-light uppercase text-xs sm:text-[calc(16px+0.25vw)] md:text-[calc(16px+0.8vw)] tracking-widest text-text-secondary">
           Software Engineer
         </h2>
         <svg
