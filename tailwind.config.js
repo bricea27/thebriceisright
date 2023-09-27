@@ -1,5 +1,4 @@
-import colors from 'tailwindcss/colors';
-
+import colors from "tailwindcss/colors";
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -12,6 +11,9 @@ export default {
         primary: "#394041",
         secondary: "#8D866E",
       },
+    },
+    fontFamily: {
+      sans: ['circe-rounded', 'sans-serif'],
     },
   },
   plugins: [],
