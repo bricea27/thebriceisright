@@ -4,10 +4,10 @@ import headshot from "./assets/headshot.png";
 
 export default function App() {
   return (
-    <main>
-      <section className="flex flex-col w-full min-h-screen bg-background relative p-12">
+    <main className="w-screen h-screen p-8">
+      <section className="flex flex-col w-full h-full bg-background relative p-8 rounded-lg overflow-hidden">
         <Logo className="animate animate-fade-in-up max-w-[80px] mb-4 stroke-text-secondary" />
-        <div className="animate animate-fade-in-up flex flex-col flex-1 justify-center md:w-1/2 sm:w-full">
+        <div className="animate animate-fade-in-up flex flex-col flex-1 justify-center md:w-1/2 sm:w-full z-10">
           <h1 className="font-sans font-extrabold mb-2 text-[calc(16px+3vw)] leading-none text-text-primary tracking-tight">
             Andrew Brice
           </h1>
@@ -17,10 +17,13 @@ export default function App() {
             and dynamic web interfaces.
           </p>
         </div>
-      </section>
-      <section className="w-full min-h-screen bg-white relative p-12">
+        <div className="font-sans font-extrabold flex gap-4">
+          <span>Email</span>
+          <span>Github</span>
+          <span>Linkedin</span>
+        </div>
         <img
-          className="absolute bottom-0 right-0 hidden md:block max-w-xl drop-shadow-xl"
+          className="animate animate-fade-in absolute bottom-0 right-0 hidden md:block w-auto h-[80vh] drop-shadow-xl"
           alt="Andrew Brice headshot"
           src={headshot}
         />
