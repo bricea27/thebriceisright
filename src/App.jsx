@@ -4,9 +4,9 @@ import headshot from "./assets/headshot.png";
 
 export default function App() {
   return (
-    <main className="w-screen h-screen p-8">
-      <section className="flex flex-col w-full h-full bg-background relative p-8 rounded-lg overflow-hidden">
-        <Logo className="animate animate-fade-in-up max-w-[80px] mb-4 stroke-text-secondary" />
+    <main className="w-screen h-screen p-6 md:p-8">
+      <section className="flex flex-col w-full h-full bg-background relative p-6 md:p-8 rounded-lg overflow-hidden">
+        <Logo className="animate animate-fade-in-up max-w-[80px] md:max-w-[90px] mb-4 stroke-text-secondary" />
         <div className="animate animate-fade-in-up flex flex-col flex-1 justify-center md:w-1/2 sm:w-full z-10">
           <h1 className="font-sans font-extrabold mb-2 text-[calc(16px+3vw)] leading-none text-text-primary tracking-tight">
             Andrew Brice
@@ -17,7 +17,7 @@ export default function App() {
             and dynamic web interfaces.
           </p>
         </div>
-        <div className="font-sans font-extrabold flex gap-4">
+        <div className="font-sans font-extrabold flex gap-4 text-sm md:text-base">
           <span>Email</span>
           <span>Github</span>
           <span>Linkedin</span>
