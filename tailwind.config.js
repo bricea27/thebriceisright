@@ -10,6 +10,7 @@ export default {
       text: {
         primary: "#394041",
         secondary: "#8D866E",
+        link: '#D8BE75'
       },
     },
     fontFamily: {

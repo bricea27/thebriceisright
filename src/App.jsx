@@ -2,10 +2,48 @@ import Logo from "./components/Logo";
 
 import headshot from "./assets/headshot.png";
 
+import { FaGithubAlt, FaLinkedinIn } from "react-icons/fa6";
+
 export default function App() {
   return (
     <main>
-      <section className="flex flex-col place-content-center text-center w-full min-h-screen bg-text-primary">
+      <img
+        className="fixed right-0 bottom-0 min-w-full min-h-full max-w-none z-0"
+        src="https://media0.giphy.com/media/tGrq4uzKIJaLuI3uz7/giphy.gif?cid=ecf05e472z3bm2dqv3uv9kjdxripyexkgwkzj09tasy2ufp3&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+      />
+      <section className="w-screen h-screen overflow-hidden relative flex flex-col text-center place-content-center">
+        <Logo className="animate animate-fade-in-up max-w-[80px] md:max-w-[120px] mt-auto mb-4 mx-auto stroke-background" />
+        <h1 className="animate animate-fade-in-right font-sans font-extrabold text-[calc(16px+3vw)] text-background tracking-tight">
+          Andrew Brice
+        </h1>
+        <h2 className="animate animate-fade-in-left font-sans font-normal uppercase text-[calc(16px+0.5vw)] tracking-widest text-background">
+          Software Engineer
+        </h2>
+        <footer className="animate animate-fade-in-up w-full px-8 h-16 mt-auto flex items-center justify-between">
+          <a
+            className="font-sans font-extrabold text-lg md:text-xl text-background"
+            href="#"
+          >
+            Bio
+          </a>
+          <div className="flex gap-6 items-center">
+            <a
+              className="font-sans font-extrabold text-lg md:text-xl text-background"
+              href="#"
+            >
+              <FaGithubAlt />
+            </a>
+            <a
+              className="font-sans font-extrabold text-lg md:text-xl text-background"
+              href="#"
+            >
+              <FaLinkedinIn />
+            </a>
+          </div>
+        </footer>
+      </section>
+
+      {/* <section className="flex flex-col place-content-center text-center w-full min-h-screen bg-text-primary">
         <Logo className="animate animate-fade-in-up max-w-[80px] md:max-w-[120px] mb-4 mx-auto mt-auto stroke-text-secondary" />
         <h1 className="animate animate-fade-in-right font-sans font-extrabold text-[calc(16px+3vw)] text-background tracking-tight">
           Andrew Brice
@@ -44,7 +82,7 @@ export default function App() {
           alt="Andrew Brice headshot"
           src={headshot}
         />
-      </section>
+      </section> */}
     </main>
   );
 }
