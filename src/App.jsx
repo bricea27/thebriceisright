@@ -1,3 +1,4 @@
+import Link from "./components/Link";
 import Logo from "./components/Logo";
 
 import headshot from "./assets/headshot.png";
@@ -17,13 +18,13 @@ export default function App() {
             and dynamic web interfaces.
           </p>
         </div>
-        <div className="font-sans font-extrabold flex gap-4 text-sm md:text-base">
-          <span>Email</span>
-          <span>Github</span>
-          <span>Linkedin</span>
+        <div className="animate animate-fade-in-up font-sans font-extrabold flex gap-4 text-sm md:text-base">
+          <Link href="mailto:bricea27@gmail.com">Email</Link>
+          <Link href="https://github.com/bricea27">Github</Link>
+          <Link href="https://www.linkedin.com/in/briceandrew/">Linkedin</Link>
         </div>
         <img
-          className="animate animate-fade-in absolute bottom-0 right-0 hidden md:block w-auto h-[80vh] drop-shadow-xl"
+          className="animate animate-fade-in-up absolute bottom-0 right-0 hidden md:block w-auto h-[80vh] drop-shadow-xl"
           alt="Andrew Brice headshot"
           src={headshot}
         />
