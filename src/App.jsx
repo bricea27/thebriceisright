@@ -5,14 +5,14 @@ import headshot from "./assets/headshot.png";
 
 export default function App() {
   return (
-    <main className="w-screen h-screen p-6 md:p-8">
-      <section className="flex flex-col w-full h-full bg-background relative p-6 md:p-8 rounded-lg overflow-hidden">
-        <Logo className="animate animate-fade-in-up max-w-[80px] md:max-w-[90px] mb-4 stroke-text-secondary" />
-        <div className="animate animate-fade-in-up flex flex-col flex-1 justify-center md:w-1/2 sm:w-full z-10">
-          <h1 className="font-sans font-extrabold mb-2 text-[calc(16px+3vw)] leading-none text-text-primary tracking-tight">
+    <main className="w-screen min-h-screen flex p-6 md:p-8">
+      <section className="flex flex-col w-full min-h-full bg-background relative p-6 md:p-8 rounded-lg">
+        <Logo className="animate animate-fade-in-up max-w-[40px] md:max-w-[60px] lg:max-w-[80px] stroke-text-secondary" />
+        <div className="animate animate-fade-in-up flex flex-col flex-1 justify-center md:w-1/2 sm:w-full my-16 z-10">
+          <h1 className="font-sans font-extrabold mb-2 text-xl md:text-2xl lg:text-4xl leading-none text-text-primary tracking-tight">
             Andrew Brice
           </h1>
-          <p className="font-sans font-light text-text-primary text-2xl text-[calc(16px+1vw)] leading-normal">
+          <p className="font-sans font-light text-text-primary text-lg md:text-xl lg:text-2xl leading-normal">
             has nearly a decade of experience as a software engineer and mentor,
             leveraging his background in design to build clean, user-friendly,
             and dynamic web interfaces.
