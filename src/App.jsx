@@ -21,22 +21,16 @@ export default function App() {
           user-friendly web applications.
         </ArticleBody>
         <ArticleBody>
-          He currently lives in Indianapolis, Indiana with his wife, son, and
-          two dogs. Born in New York City and raised just across the Hudson
-          river in New Jersey, Andrew took a job in Indy in 2015 and has since
-          called it his home.
+          Born in New York City and raised just across the Hudson river in New
+          Jersey, Andrew took a job in Indianapolis in 2015 and has since called
+          it his home. He lives in Indy with his wife, son, and two dogs.
         </ArticleBody>
-      </Article>
-      <Article>
-        <ArticleHeading>Interests</ArticleHeading>
         <ArticleBody>
-          Andrew is a lover of all things sci-fi / fantasy, an avid gym-goer,
+          Andrew is an avid gym-goer, a lover of all things sci-fi / fantasy,
           and a washed up high school athlete who fuels his dreams playing beer
-          league softball on Sunday afternoons.
-        </ArticleBody>
-        <ArticleBody>
-          His favorite thing to do, aside from making his son laugh, is to go to
-          the movies and crush a large buttered popcorn (layered, of course).
+          league softball on Sunday afternoons. His favorite thing to do, aside
+          from making his son laugh, is to go to the movies and crush a large
+          buttered popcorn (layered, of course).
         </ArticleBody>
       </Article>
     </main>
