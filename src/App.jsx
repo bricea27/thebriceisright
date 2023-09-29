@@ -1,33 +1,52 @@
-import Link from "./components/Link";
 import Logo from "./components/Logo";
-
-import headshot from "./assets/headshot.png";
 
 export default function App() {
   return (
-    <main className="w-screen min-h-screen flex p-6 md:p-8">
-      <section className="flex flex-col w-full min-h-full bg-background relative p-6 md:p-8 rounded-lg">
-        <Logo className="animate animate-fade-in-up max-w-[40px] md:max-w-[60px] lg:max-w-[80px] stroke-text-secondary" />
-        <div className="animate animate-fade-in-up flex flex-col flex-1 justify-center md:w-1/2 sm:w-full my-16 z-10">
-          <h1 className="font-sans font-extrabold mb-2 text-xl md:text-2xl lg:text-4xl leading-none text-text-primary tracking-tight">
-            Andrew Brice
-          </h1>
-          <p className="font-sans font-light text-text-primary text-lg md:text-xl lg:text-2xl leading-normal">
-            has nearly a decade of experience as a software engineer and mentor,
-            leveraging his background in design to build clean, user-friendly,
-            and dynamic web interfaces.
-          </p>
-        </div>
-        <div className="animate animate-fade-in-up font-sans font-extrabold flex gap-4 text-sm md:text-base">
-          <Link href="mailto:bricea27@gmail.com">Email</Link>
-          <Link href="https://github.com/bricea27">Github</Link>
-          <Link href="https://www.linkedin.com/in/briceandrew/">Linkedin</Link>
-        </div>
-        <img
-          className="animate animate-fade-in-up absolute bottom-0 right-0 hidden md:block w-auto h-[80vh] drop-shadow-xl"
-          alt="Andrew Brice headshot"
-          src={headshot}
-        />
+    <main className="w-full min-h-screen bg-background p-16 text-text-primary bg-gradient-to-br from-background to-background-light items-center flex flex-col">
+      <header className="w-full max-w-lg mb-16">
+        <Logo className="animate animate-fade-in-up max-w-[80px] mb-8 stroke-text-secondary" />
+        <h1 className="font-sans font-extrabold text-2xl">Andrew Brice</h1>
+        <h2 className="font-sans font-light text-xl">Software Engineer</h2>
+      </header>
+      <section className="max-w-lg mb-16">
+        <h3 className="font-sans font-bold text-xl mb-2">About</h3>
+        <p className="font-sans font-light text-lg mb-2">
+          Andrew is a UI focused software engineer with nearly a decade of
+          experience leveraging his background in design to build clean and
+          user-friendly web applications.
+        </p>
+        <p className="font-sans font-light text-lg mb-2">
+          He currently lives in Indianapolis, Indiana with his wife, son, and
+          two dogs. Born in New York City and raised just across the Hudson
+          river in New Jersey, Andrew took a job in Indy in 2015 and has since
+          called it his home.
+        </p>
+      </section>
+      <section className="max-w-lg mb-16">
+        <h3 className="font-sans font-bold text-xl mb-2">Interests</h3>
+        <p className="font-sans font-light text-lg mb-2">
+          Andrew is a lover of all things sci-fi / fantasy, an avid gym-goer,
+          and a washed up high school athlete who fuels his dreams playing beer
+          league softball on Sunday afternoons.
+        </p>
+        <p className="font-sans font-light text-lg mb-2">
+          His favorite thing to do, aside from making his son laugh, is to go to
+          the movies and crush a large buttered popcorn (layered, of course).
+        </p>
+      </section>
+
+      <section className="max-w-lg mb-16">
+        <h3 className="font-sans font-bold text-xl mb-2">Work</h3>
+        <p className="font-sans font-light text-lg mb-2">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
+          tristique ante. Curabitur in libero eu magna auctor posuere. Nam nisl
+          nisl, rhoncus nec bibendum nec, ullamcorper ut magna. Nulla facilisi.
+          Nunc congue, nulla aliquam euismod condimentum, quam turpis lacinia
+          ipsum, nec porta nisi diam non justo. Fusce malesuada erat in lorem
+          tincidunt, eget congue tellus pellentesque. Proin non molestie magna.
+          In sed libero vel neque semper dictum non a quam. Pellentesque feugiat
+          sapien vitae libero eleifend, vitae pellentesque arcu mattis.
+        </p>
       </section>
     </main>
   );
