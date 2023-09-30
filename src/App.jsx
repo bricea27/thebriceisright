@@ -62,10 +62,29 @@ export default function App() {
       </article>
       {reference?.value && (
         <article className="w-full max-w-lg lg:max-w-2xl mb-8 lg:mb-16">
-          <h3 className="font-bold text-lg lg:text-2xl mb-4 lg:mb-6">
+          <h3 className="flex items-center justify-between font-bold text-lg lg:text-2xl mb-4 lg:mb-6">
             References
+            <button
+              className="hover:text-text-primary rounded-full transition-all p-2 inline-flex items-center text-text-secondary"
+              onClick={fetchQuote}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"
+                />
+              </svg>
+            </button>
           </h3>
-          <div className="px-4 py-8 mx-auto text-center bg-text-secondary bg-opacity-10 rounded-2xl relative">
+          <div className="px-4 py-8 mx-auto text-center bg-text-secondary bg-opacity-10 rounded-2xl flex-1">
             <figure className="max-w-screen-md mx-auto">
               <svg
                 className="h-12 mx-auto mb-3 text-text-secondary opacity-30"
@@ -94,12 +113,6 @@ export default function App() {
                 </div>
               </figcaption>
             </figure>
-            <button
-              className="bg-text-secondary bg-opacity-80 transition-opacity hover:bg-opacity-100 text-background font-bold py-2 px-4 rounded-2xl mx-auto absolute top-4 right-4"
-              onClick={fetchQuote}
-            >
-              Next
-            </button>
           </div>
         </article>
       )}
