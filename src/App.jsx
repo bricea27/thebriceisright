@@ -74,7 +74,7 @@ export default function App() {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-6 h-6"
+                className="w-5 lg:w-6 h-5 lg:h-6"
               >
                 <path
                   strokeLinecap="round"
