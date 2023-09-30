@@ -1,11 +1,15 @@
-// import Article, { ArticleBody, ArticleHeading } from "./components/Article";
+import styles from "./App.module.css";
+
 import Logo from "./components/Logo";
 
 export default function App() {
   return (
     <main className="w-full min-h-screen bg-background p-8 lg:p-16 font-sans text-text-primary bg-gradient-to-br from-background to-background-light flex flex-col items-center">
       <header className="animate animate-fade-in-up w-full max-w-lg lg:max-w-2xl mb-8 lg:mb-16">
-        <Logo className="max-w-[70px] lg:max-w-[100px] mb-4 lg:mb-8 stroke-text-secondary" />
+        <Logo
+          id={styles.logo}
+          className="max-w-[70px] lg:max-w-[100px] mb-4 lg:mb-8 stroke-text-secondary"
+        />
         <h1 className="font-sans font-extrabold text-2xl lg:text-4xl">
           Andrew Brice
         </h1>
@@ -13,7 +17,7 @@ export default function App() {
           Software Engineer
         </h2>
       </header>
-      <article className="animate animate-fade-in-up w-full max-w-lg lg:max-w-2xl mb-8 lg:mb-16">
+      <article className="w-full max-w-lg lg:max-w-2xl mb-8 lg:mb-16">
         <h3 className="font-bold text-lg lg:text-2xl mb-4 lg:mb-6">About</h3>
         <p className="font-light text-base lg:text-xl mb-4 lg:mb-6">
           Andrew is a UI focused software engineer with nearly a decade of
