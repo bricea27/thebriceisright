@@ -28,7 +28,7 @@ export default function App() {
 
   return (
     <main className="w-full min-h-screen bg-background p-8 lg:p-16 font-sans text-text-primary flex flex-col items-center">
-      <header className="animate animate-fade-in-up w-full max-w-lg lg:max-w-2xl mb-8 lg:mb-16">
+      <header className="animate animate-fade-in-up w-full max-w-lg lg:max-w-2xl mb-16 lg:mb-32">
         <Logo
           id={styles.logo}
           className="max-w-[70px] lg:max-w-[100px] mb-4 lg:mb-8 stroke-text-secondary"
