@@ -43,7 +43,10 @@ export default function App() {
       <article className="w-full max-w-lg lg:max-w-2xl mb-8 lg:mb-16">
         <h3 className="font-bold text-lg lg:text-2xl mb-4 lg:mb-6">About</h3>
         <p className="font-light text-base lg:text-xl mb-4 lg:mb-6">
-          Andrew Brice is a UI focused software engineer with ten years of experience coding for the web. He leverages his background in design to craft clean, user-friendly web applications, interfaces, and interactions.
+          Andrew Brice is a UI focused software engineer with ten years of
+          experience coding for the web. He leverages his background in design
+          to craft clean, user-friendly web applications, interfaces, and
+          interactions.
         </p>
         <p className="font-light text-base lg:text-xl mb-4 lg:mb-6">
           Born in New York City and raised in New Jersey, Andrew took a job in
@@ -51,11 +54,10 @@ export default function App() {
           Indy with his wife, son, and their two dogs.
         </p>
         <p className="font-light text-base lg:text-xl mb-4 lg:mb-6">
-          Andrew is an avid gym-goer, a lover of all things sci-fi / fantasy,
-          and a washed up high school athlete who fuels his dreams playing beer
-          league softball on Sunday afternoons. His favorite thing to do, aside
-          from making his son laugh, is to go to the movies and crush a large
-          buttered popcorn (layered, of course).
+          Andrew loves to read sci-fi and fantasy, tinker with his mechanical keyboards,
+          and play beer league softball on Sunday afternoons. His favorite thing
+          to do, aside from making his son laugh, is to go to the movies and
+          crush a large buttered popcorn (layered, of course).
         </p>
       </article>
       {reference?.value && (
