@@ -7,24 +7,37 @@ import Logo from "./components/Logo";
 export default function App() {
   const [reference, setReference] = React.useState();
 
-  const fetchQuote = async () => {
-    const response = await fetch(
-      "https://api.chucknorris.io/jokes/random?category=dev&name=Andrew"
-    );
-    const { value } = await response.json();
+  const getReference = React.useCallback(async () => {
+    const fetchQuote = async () => {
+      const response = await fetch(
+        "https://api.chucknorris.io/jokes/random?category=dev&name=Andrew"
+      );
+      return await response.json();
+    };
 
-    const user = await fetch("https://randomuser.me/api/");
-    const { results } = await user.json();
+    const fetchAttribution = async () => {
+      const response = await fetch("https://randomuser.me/api/");
+      return await response.json();
+    };
 
-    setReference({
-      ...results[0],
-      value,
-    });
-  };
+    try {
+      const [quote, attribution] = await Promise.all([
+        fetchQuote(),
+        fetchAttribution(),
+      ]);
+
+      setReference({
+        ...attribution.results[0],
+        value: quote.value,
+      });
+    } catch (e) {
+      // intentionally empty
+    }
+  }, []);
 
   React.useEffect(() => {
-    fetchQuote();
-  }, []);
+    getReference();
+  }, [getReference]);
 
   return (
     <main className="w-full min-h-screen bg-background p-8 lg:p-16 font-sans text-text-primary flex flex-col items-center">
@@ -54,10 +67,10 @@ export default function App() {
           Indy with his wife, son, and their two dogs.
         </p>
         <p className="font-light text-base lg:text-xl mb-4 lg:mb-6">
-          Andrew loves to read sci-fi and fantasy, tinker with his mechanical keyboards,
-          and play beer league softball on Sunday afternoons. His favorite thing
-          to do, aside from making his son laugh, is to go to the movies and
-          crush a large buttered popcorn (layered, of course).
+          Andrew loves to read sci-fi and fantasy, tinker with his mechanical
+          keyboards, and play beer league softball on Sunday afternoons. His
+          favorite thing to do, aside from making his son laugh, is to go to the
+          movies and crush a large buttered popcorn (layered, of course).
         </p>
       </article>
       {reference?.value && (
@@ -66,7 +79,7 @@ export default function App() {
             References
             <button
               className="hover:text-text-primary rounded-full transition-all p-2 inline-flex items-center text-text-secondary"
-              onClick={fetchQuote}
+              onClick={getReference}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
