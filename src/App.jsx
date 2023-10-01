@@ -43,12 +43,7 @@ export default function App() {
       <article className="w-full max-w-lg lg:max-w-2xl mb-8 lg:mb-16">
         <h3 className="font-bold text-lg lg:text-2xl mb-4 lg:mb-6">About</h3>
         <p className="font-light text-base lg:text-xl mb-4 lg:mb-6">
-          Andrew Brice has nearly a decade of experience building websites and web applications. He leverages his background in design to craft clean, user-friendly experiences.
-          {/* What started purely as a requirement to fulfill his design degree,
-          coding for the web quickly became Andrew's primary passion and
-          eventual career. Andrew now has ten years of experience designing and
-          building web applications. He leverages his background in design to craft clean
-          and user-friendly experiences. */}
+          Andrew Brice is a UI focused software engineer with ten years of experience coding for the web. He leverages his background in design to craft clean, user-friendly web applications, interfaces, and interactions.
         </p>
         <p className="font-light text-base lg:text-xl mb-4 lg:mb-6">
           Born in New York City and raised in New Jersey, Andrew took a job in
