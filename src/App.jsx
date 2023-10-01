@@ -28,7 +28,7 @@ export default function App() {
 
   return (
     <main className="w-full min-h-screen bg-background p-8 lg:p-16 font-sans text-text-primary flex flex-col items-center">
-      <header className="animate animate-fade-in-up w-full max-w-lg lg:max-w-2xl mb-16 lg:mb-32">
+      <header className="animate animate-fade-in-up w-full max-w-lg lg:max-w-2xl mb-24 lg:mb-32">
         <Logo
           id={styles.logo}
           className="max-w-[70px] lg:max-w-[100px] mb-4 lg:mb-8 stroke-text-secondary"
@@ -37,20 +37,23 @@ export default function App() {
           Andrew Brice
         </h1>
         <h2 className="font-sans font-light text-lg lg:text-2xl">
-          UI Engineer
+          Software Engineer
         </h2>
       </header>
       <article className="w-full max-w-lg lg:max-w-2xl mb-8 lg:mb-16">
         <h3 className="font-bold text-lg lg:text-2xl mb-4 lg:mb-6">About</h3>
         <p className="font-light text-base lg:text-xl mb-4 lg:mb-6">
-          Andrew is a UI focused software engineer with nearly a decade of
-          experience leveraging his background in design to build clean and
-          user-friendly web applications.
+          Andrew Brice has nearly a decade of experience building websites and web applications. He leverages his background in design to craft clean, user-friendly experiences.
+          {/* What started purely as a requirement to fulfill his design degree,
+          coding for the web quickly became Andrew's primary passion and
+          eventual career. Andrew now has ten years of experience designing and
+          building web applications. He leverages his background in design to craft clean
+          and user-friendly experiences. */}
         </p>
         <p className="font-light text-base lg:text-xl mb-4 lg:mb-6">
-          Born in New York City and raised across the Hudson river in New
-          Jersey, Andrew took a job in Indianapolis in 2015 and has since called
-          it his home. He lives in Indy with his wife, son, and two dogs.
+          Born in New York City and raised in New Jersey, Andrew took a job in
+          Indianapolis in 2015 and has since called it home. He now lives in
+          Indy with his wife, son, and their two dogs.
         </p>
         <p className="font-light text-base lg:text-xl mb-4 lg:mb-6">
           Andrew is an avid gym-goer, a lover of all things sci-fi / fantasy,
