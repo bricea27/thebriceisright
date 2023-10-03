@@ -1,4 +1,5 @@
 import colors from "tailwindcss/colors";
+import defaultTheme from "tailwindcss/defaultTheme";
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -15,6 +16,12 @@ export default {
     },
     fontFamily: {
       sans: ["circe-rounded", "sans-serif"],
+    },
+    extend: {
+      screens: {
+        xs: "475px",
+        ...defaultTheme.screens,
+      },
     },
   },
   plugins: [],
