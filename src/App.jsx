@@ -1,4 +1,4 @@
-import React from "react";
+import { useCallback, useEffect, useState } from "react";
 
 import styles from "./App.module.css";
 
@@ -8,9 +8,9 @@ import Logo from "./components/Logo";
 import headshot from "./assets/headshot.png";
 
 export default function App() {
-  const [reference, setReference] = React.useState();
+  const [quote, setQuote] = useState(null);
 
-  const getReference = React.useCallback(async () => {
+  const getQuote = useCallback(async () => {
     const fetchQuote = async () => {
       const response = await fetch(
         "https://api.chucknorris.io/jokes/random?category=dev&name=Andrew"
@@ -24,23 +24,23 @@ export default function App() {
     };
 
     try {
-      const [quote, attribution] = await Promise.all([
+      const [{ value }, attribution] = await Promise.all([
         fetchQuote(),
         fetchAttribution(),
       ]);
 
-      setReference({
+      setQuote({
         ...attribution.results[0],
-        value: quote.value,
+        value,
       });
     } catch (e) {
       // intentionally empty
     }
   }, []);
 
-  React.useEffect(() => {
-    getReference();
-  }, [getReference]);
+  useEffect(() => {
+    getQuote();
+  }, [getQuote]);
 
   return (
     <div className="w-full min-h-screen bg-background font-sans text-text-primary sm:px-8 md:px-16">
@@ -110,67 +110,101 @@ export default function App() {
             />
           </article>
         </section>
-        <article className="w-full max-w-lg lg:max-w-2xl mb-8 lg:mb-16 px-8 sm:p-0">
-          <h3 className="font-bold text-lg lg:text-2xl mb-4 lg:mb-6">About</h3>
+        <article className="w-full max-w-lg lg:max-w-2xl mb-4 lg:mb-8 px-8 sm:p-0">
+          <h3 className="font-bold text-lg lg:text-2xl mb-4 lg:mb-6">
+            About Me
+          </h3>
           <p className="font-light text-base lg:text-xl mb-4 lg:mb-6">
-            Andrew Brice is a UI focused software engineer with ten years of
-            experience coding for the web. He leverages his background in design
-            to craft clean, user-friendly web applications.
+            Hi, I'm Andrew - a UI focused software engineer with ten years of
+            experience coding for the web. I leverage my background in design to
+            craft clean, user-friendly web applications.
           </p>
           <p className="font-light text-base lg:text-xl mb-4 lg:mb-6">
-            Born in New York City and raised in New Jersey, Andrew moved to
-            Indianapolis for a job at an early stage startup back in 2015, and
-            has since called it home. He now lives in Indy with his wife, son,
-            and their two dogs.
+            Born in New York City and raised in New Jersey, I moved to
+            Indianapolis for a job back in 2015, and have since called it home.
+            I currently live in Indy with my wife, son, and our two dogs.
           </p>
           <p className="font-light text-base lg:text-xl mb-4 lg:mb-6">
-            Andrew loves to read sci-fi and fantasy, tinker with his mechanical
-            keyboards, and play beer league softball on Sunday afternoons. His
-            favorite thing to do, aside from making his son laugh, is to go to
+            I love to read sci-fi / fantasy, tinker with my mechanical
+            keyboards, and play beer league softball on Sunday afternoons. My
+            favorite thing to do, aside from making my son laugh, is to go to
             the movies and crush a large buttered popcorn (layered, of course).
           </p>
         </article>
-        {reference?.value && (
-          <article className="w-full max-w-lg lg:max-w-2xl mb-8 lg:mb-16 px-8 sm:p-0">
-            <h3 className="flex items-center justify-between font-bold text-lg lg:text-2xl mb-4 lg:mb-6">
-              Contact
-            </h3>
-            <p className="font-light text-base lg:text-xl mb-4 lg:mb-6">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam
-              et pariatur corrupti consectetur.
-            </p>
-            <div className="px-4 py-8 mx-auto text-center bg-text-secondary bg-opacity-10 rounded-2xl flex-1">
-              <figure className="max-w-screen-md mx-auto">
-                <svg
-                  className="h-12 mx-auto mb-3 text-text-secondary opacity-30"
-                  viewBox="0 0 24 27"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
-                    fill="currentColor"
-                  />
-                </svg>
-                <blockquote>
-                  <p className="font-medium  text-base lg:text-xl">
-                    "{reference.value}"
-                  </p>
-                </blockquote>
-                <figcaption className="flex items-center justify-center mt-6 space-x-3">
-                  <img
-                    className="w-6 h-6 rounded-full"
-                    src={reference.picture.thumbnail}
-                    alt="profile picture"
-                  />
-                  <div className="font-normal text- dark:text-white">
-                    {reference?.name.first} {reference.name.last}
-                  </div>
-                </figcaption>
-              </figure>
-            </div>
-          </article>
-        )}
+        <article className="w-full max-w-lg lg:max-w-2xl mb-4 lg:mb-8 px-8 sm:p-0">
+          <h3 className="flex items-center justify-between font-bold text-lg lg:text-2xl mb-4 lg:mb-6">
+            References
+          </h3>
+          <p className="font-light text-base lg:text-xl mb-4 lg:mb-6">
+            I've worked with some pretty amazing people over the years. Check
+            out what some of them have been kind enough to say about me below!
+          </p>
+          <div className="w-full flex items-center justify-between gap-8 py-8">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-6 h-6 cursor-pointer stroke-text-secondary hover:stroke-text-primary"
+              onClick={getQuote}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M15.75 19.5L8.25 12l7.5-7.5"
+              />
+            </svg>
+
+            {quote && (
+              <div className="px-4 py-8 mx-auto text-center bg-white bg-opacity-50 rounded-2xl flex-1">
+                <figure className="max-w-screen-md mx-auto">
+                  <svg
+                    className="h-12 mx-auto mb-3 text-text-secondary opacity-30"
+                    viewBox="0 0 24 27"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  <blockquote>
+                    <p className="font-medium  text-base lg:text-xl">
+                      "{quote.value}"
+                    </p>
+                  </blockquote>
+                  <figcaption className="flex items-center justify-center mt-6 space-x-3">
+                    <img
+                      className="w-6 h-6 rounded-full"
+                      src={quote.picture.thumbnail}
+                      alt="profile picture"
+                    />
+                    <div className="font-normal text- dark:text-white">
+                      {quote?.name.first} {quote.name.last}
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+            )}
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              className="w-6 h-6 cursor-pointer stroke-text-secondary hover:stroke-text-primary transition-all"
+              onClick={getQuote}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </div>
+        </article>
       </main>
     </div>
   );
