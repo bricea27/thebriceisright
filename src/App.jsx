@@ -66,7 +66,7 @@ export default function App() {
               </h2>
             </div>
             <img
-              className="w-auto h-[90%] absolute bottom-0 -right-12 xs:-right-8"
+              className="w-auto h-[90%] absolute bottom-0 -right-12 xs:-right-8 drop-shadow-md"
               src={headshot}
             />
           </article>
