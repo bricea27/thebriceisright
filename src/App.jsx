@@ -58,14 +58,17 @@ export default function App() {
         <section className="w-full h-72 lg:h-96 lg:max-w-4xl flex place-content-center mb-8 lg:mb-16 bg-text-secondary bg-opacity-10 sm:rounded-3xl overflow-hidden">
           <article className="w-full max-w-lg lg:max-w-2xl rounded-3xl flex items-center justify-between pl-8 sm:pl-0 relative">
             <div>
-              <h1 className="font-sans font-extrabold text-2xl xs:text-3xl lg:text-4xl leading-none">
+              <h1 className="font-sans font-extrabold text-2xl xs:text-3xl lg:text-5xl leading-none">
                 Andrew Brice
               </h1>
-              <h2 className="font-sans font-light text-base xs:text-xl lg:text-2xl">
+              <h2 className="font-sans font-light text-base xs:text-xl lg:text-3xl">
                 Software Engineer
               </h2>
             </div>
-            <img className="w-auto h-[90%] absolute bottom-0 -right-8" src={headshot} />
+            <img
+              className="w-auto h-[90%] absolute bottom-0 -right-12 xs:-right-8"
+              src={headshot}
+            />
           </article>
         </section>
         <article className="w-full max-w-lg lg:max-w-2xl mb-8 lg:mb-16 px-8 sm:p-0">
