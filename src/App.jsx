@@ -2,6 +2,7 @@ import React from "react";
 
 import styles from "./App.module.css";
 
+import Link from "./components/Link";
 import Logo from "./components/Logo";
 
 import headshot from "./assets/headshot.png";
@@ -43,15 +44,19 @@ export default function App() {
 
   return (
     <div className="w-full min-h-screen bg-background font-sans text-text-primary sm:px-8 md:px-16">
-      <header className="w-full max-w-lg lg:max-w-2xl mx-auto p-8 sm:px-0 sm:py-16 ">
+      <header className="w-full max-w-lg lg:max-w-2xl flex items-center justify-between mx-auto p-8 sm:px-0 sm:py-12">
         <Logo
           id={styles.logo}
           className="max-w-[60px] lg:max-w-[80px] stroke-text-secondary"
         />
+        <div className="flex items-center gap-9">
+          <Link href="https://github.com/bricea27">Github</Link>
+          <Link href="https://www.linkedin.com/in/briceandrew/">LinkedIn</Link>
+        </div>
       </header>
       <main className="w-full flex flex-col items-center">
         <section className="w-full lg:max-w-4xl flex place-content-center mb-8 lg:mb-16 bg-text-secondary bg-opacity-10 sm:rounded-3xl">
-          <article className="w-full max-w-lg lg:max-w-2xl rounded-3xl flex items-center justify-between overflow-hidden pt-12 sm:pt-16 px-8 sm:p-0">
+          <article className="w-full max-w-lg lg:max-w-2xl rounded-3xl flex items-center justify-between pt-12 sm:pt-16 px-8 sm:p-0">
             <div className="mb-12 sm:mb-16">
               <h1 className="font-sans font-extrabold text-2xl xs:text-3xl lg:text-4xl leading-none">
                 Andrew Brice
@@ -72,9 +77,9 @@ export default function App() {
             interactions.
           </p>
           <p className="font-light text-base lg:text-xl mb-4 lg:mb-6">
-            Born in New York City and raised in New Jersey, Andrew took a job in
-            Indianapolis in 2015 and has since called it home. He now lives in
-            Indy with his wife, son, and their two dogs.
+            Born in New York City and raised in New Jersey, Andrew accepted a
+            job in Indianapolis in 2015 and has since called it home. He now
+            lives in Indy with his wife, son, and their two dogs.
           </p>
           <p className="font-light text-base lg:text-xl mb-4 lg:mb-6">
             Andrew loves to read sci-fi and fantasy, tinker with his mechanical
