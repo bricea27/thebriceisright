@@ -50,7 +50,7 @@ export default function App() {
         />
       </header>
       <article className="w-full max-w-lg lg:max-w-2xl mb-8 lg:mb-16 bg-text-secondary bg-opacity-10 rounded-3xl flex items-center justify-between overflow-hidden p-4 pb-0 xs:p-8 xs:pb-0 lg:p-16 lg:pb-0">
-        <div className="mb-16">
+        <div className="mb-4 xs:mb-8 lg:mb-16">
           <h1 className="font-sans font-extrabold text-xl xs:text-2xl lg:text-4xl">
             Andrew Brice
           </h1>
