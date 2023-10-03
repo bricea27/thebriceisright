@@ -50,13 +50,13 @@ export default function App() {
         />
       </header>
       <main className="w-full flex flex-col items-center">
-        <section className="w-full lg:max-w-4xl flex place-content-center mb-16 lg:mb-24 bg-text-secondary bg-opacity-10 sm:rounded-3xl px-8 sm:p-0">
-          <article className="w-full max-w-lg lg:max-w-2xl rounded-3xl flex items-center justify-between overflow-hidden pt-16">
-            <div className="mb-16">
-              <h1 className="font-sans font-extrabold text-xl xs:text-2xl lg:text-4xl">
+        <section className="w-full lg:max-w-4xl flex place-content-center mb-8 lg:mb-16 bg-text-secondary bg-opacity-10 sm:rounded-3xl">
+          <article className="w-full max-w-lg lg:max-w-2xl rounded-3xl flex items-center justify-between overflow-hidden pt-12 sm:pt-16 px-8 sm:p-0">
+            <div className="mb-12 sm:mb-16">
+              <h1 className="font-sans font-extrabold text-2xl xs:text-3xl lg:text-4xl leading-none">
                 Andrew Brice
               </h1>
-              <h2 className="font-sans font-light text-sm xs:text-lg lg:text-2xl">
+              <h2 className="font-sans font-light text-base xs:text-xl lg:text-2xl">
                 Software Engineer
               </h2>
             </div>
