@@ -62,7 +62,7 @@ export default function App() {
         </div>
       </header>
       <main className="w-full flex flex-col items-center">
-        <section className="w-full h-72 lg:h-96 lg:max-w-4xl flex place-content-center mb-8 lg:mb-16 bg-text-secondary bg-opacity-10 sm:rounded-3xl overflow-hidden">
+        <section className="w-full h-72 lg:h-96 max-w-2xl lg:max-w-4xl flex place-content-center mb-8 lg:mb-16 bg-text-secondary bg-opacity-10 sm:rounded-3xl overflow-hidden">
           <article className="w-full max-w-lg lg:max-w-2xl rounded-3xl flex items-center justify-between pl-8 sm:pl-0 relative">
             <div>
               <h1 className="font-sans font-extrabold text-2xl xs:text-3xl lg:text-5xl leading-none">
@@ -83,13 +83,13 @@ export default function App() {
           <p className="font-light text-base lg:text-xl mb-4 lg:mb-6">
             Andrew Brice is a UI focused software engineer with ten years of
             experience coding for the web. He leverages his background in design
-            to craft clean, user-friendly web applications, interfaces, and
-            interactions.
+            to craft clean, user-friendly web applications.
           </p>
           <p className="font-light text-base lg:text-xl mb-4 lg:mb-6">
-            Born in New York City and raised in New Jersey, Andrew accepted a
-            job in Indianapolis in 2015 and has since called it home. He now
-            lives in Indy with his wife, son, and their two dogs.
+            Born in New York City and raised in New Jersey, Andrew moved to
+            Indianapolis for a job at an early stage startup back in 2015, and
+            has since called it home. He now lives in Indy with his wife, son,
+            and their two dogs.
           </p>
           <p className="font-light text-base lg:text-xl mb-4 lg:mb-6">
             Andrew loves to read sci-fi and fantasy, tinker with his mechanical
