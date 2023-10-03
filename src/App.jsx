@@ -111,9 +111,7 @@ export default function App() {
           </article>
         </section>
         <article className="w-full max-w-lg lg:max-w-2xl mb-4 lg:mb-8 px-8 sm:p-0">
-          <h3 className="font-bold text-lg lg:text-2xl mb-4 lg:mb-6">
-            About Me
-          </h3>
+          <h3 className="font-bold text-lg lg:text-2xl mb-4 lg:mb-6">About</h3>
           <p className="font-light text-base lg:text-xl mb-4 lg:mb-6">
             Hi, I'm Andrew - a UI focused software engineer with ten years of
             experience coding for the web. I leverage my background in design to
@@ -131,79 +129,111 @@ export default function App() {
             the movies and crush a large buttered popcorn (layered, of course).
           </p>
         </article>
-        <article className="w-full max-w-lg lg:max-w-2xl mb-4 lg:mb-8 px-8 sm:p-0">
-          <h3 className="flex items-center justify-between font-bold text-lg lg:text-2xl mb-4 lg:mb-6">
-            References
+
+        <section className="w-screen flex justify-center mb-8 lg:mb-16 py-4 sm:py-8 bg-white bg-opacity-50">
+          <article className="w-full max-w-lg lg:max-w-2xl px-8 sm:p-0">
+            {/* 
+            <h3 className="font-bold text-lg lg:text-2xl mb-4 lg:mb-6">
+              References
+            </h3>
+            <p className="font-light text-base lg:text-xl mb-4 lg:mb-6">
+              I've worked with some pretty amazing people over the years. Check
+              out what some of them have been kind enough to say about me below!
+            </p> */}
+            <div className="w-full flex items-center justify-between gap-8 py-8">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6 cursor-pointer stroke-text-secondary hover:stroke-text-primary"
+                onClick={getQuote}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+
+              {quote && (
+                <div className="px-4 py-8 mx-auto text-center flex-1">
+                  <figure className="max-w-screen-md mx-auto">
+                    <svg
+                      className="h-12 mx-auto mb-3 text-text-secondary opacity-30"
+                      viewBox="0 0 24 27"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <blockquote>
+                      <p className="font-medium  text-base lg:text-xl">
+                        "{quote.value}"
+                      </p>
+                    </blockquote>
+                    <figcaption className="flex items-center justify-center mt-6 space-x-3">
+                      <img
+                        className="w-6 h-6 rounded-full"
+                        src={quote.picture.thumbnail}
+                        alt="profile picture"
+                      />
+                      <div className="font-normal text- dark:text-white">
+                        {quote?.name.first} {quote.name.last}
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+              )}
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                className="w-6 h-6 cursor-pointer stroke-text-secondary hover:stroke-text-primary transition-all"
+                onClick={getQuote}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </div>
+          </article>
+        </section>
+
+        <article className="w-full max-w-lg lg:max-w-2xl mb-8 lg:mb-16 px-8 sm:p-0">
+          <h3 className="font-bold text-lg lg:text-2xl mb-4 lg:mb-6">
+            Contact
           </h3>
           <p className="font-light text-base lg:text-xl mb-4 lg:mb-6">
-            I've worked with some pretty amazing people over the years. Check
-            out what some of them have been kind enough to say about me below!
+            Whether you'd like to discuss an opportunity or simply talk shop,
+            <br />
+            I'd love to get in touch!
           </p>
-          <div className="w-full flex items-center justify-between gap-8 py-8">
+          <Link href="mailto:bricea27@gmail.com">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-6 h-6 cursor-pointer stroke-text-secondary hover:stroke-text-primary"
-              onClick={getQuote}
+              className="w-6 h-6"
             >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                d="M15.75 19.5L8.25 12l7.5-7.5"
+                d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
               />
             </svg>
-
-            {quote && (
-              <div className="px-4 py-8 mx-auto text-center bg-white bg-opacity-50 rounded-2xl flex-1">
-                <figure className="max-w-screen-md mx-auto">
-                  <svg
-                    className="h-12 mx-auto mb-3 text-text-secondary opacity-30"
-                    viewBox="0 0 24 27"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                  <blockquote>
-                    <p className="font-medium  text-base lg:text-xl">
-                      "{quote.value}"
-                    </p>
-                  </blockquote>
-                  <figcaption className="flex items-center justify-center mt-6 space-x-3">
-                    <img
-                      className="w-6 h-6 rounded-full"
-                      src={quote.picture.thumbnail}
-                      alt="profile picture"
-                    />
-                    <div className="font-normal text- dark:text-white">
-                      {quote?.name.first} {quote.name.last}
-                    </div>
-                  </figcaption>
-                </figure>
-              </div>
-            )}
-
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              className="w-6 h-6 cursor-pointer stroke-text-secondary hover:stroke-text-primary transition-all"
-              onClick={getQuote}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M8.25 4.5l7.5 7.5-7.5 7.5"
-              />
-            </svg>
-          </div>
+            bricea27@gmail.com
+          </Link>
         </article>
       </main>
     </div>
