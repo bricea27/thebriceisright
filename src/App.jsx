@@ -47,7 +47,7 @@ export default function App() {
       <header className="w-full max-w-lg lg:max-w-2xl flex items-center justify-between mx-auto p-8 sm:px-0 sm:py-12">
         <Logo
           id={styles.logo}
-          className="max-w-[60px] lg:max-w-[80px] stroke-text-secondary"
+          className="w-[60px] lg:w-[80px] stroke-text-secondary"
         />
         <div className="flex items-center gap-9">
           <Link href="https://github.com/bricea27">Github</Link>
