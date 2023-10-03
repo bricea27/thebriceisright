@@ -56,9 +56,41 @@ export default function App() {
           id={styles.logo}
           className="w-[60px] lg:w-[80px] stroke-text-secondary stroke-[10px]"
         />
-        <div className="flex items-center gap-9">
-          <Link href="https://github.com/bricea27">Github</Link>
-          <Link href="https://www.linkedin.com/in/briceandrew/">LinkedIn</Link>
+        <div className="flex items-center gap-4 sm:gap-8">
+          <Link href="https://github.com/bricea27">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z"
+              />
+            </svg>
+            <span>Code</span>
+          </Link>
+          <Link href="https://www.linkedin.com/in/briceandrew/">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25"
+              />
+            </svg>
+            Work history
+          </Link>
         </div>
       </header>
       <main className="w-full flex flex-col items-center">
@@ -101,26 +133,7 @@ export default function App() {
         {reference?.value && (
           <article className="w-full max-w-lg lg:max-w-2xl mb-8 lg:mb-16 px-8 sm:p-0">
             <h3 className="flex items-center justify-between font-bold text-lg lg:text-2xl mb-4 lg:mb-6">
-              Work
-              {/* <button
-              className="hover:text-text-primary rounded-full transition-all p-2 inline-flex items-center text-text-secondary"
-              onClick={getReference}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-5 lg:w-6 h-5 lg:h-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"
-                />
-              </svg>
-            </button> */}
+              Contact
             </h3>
             <p className="font-light text-base lg:text-xl mb-4 lg:mb-6">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam

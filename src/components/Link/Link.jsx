@@ -1,7 +1,7 @@
 export default function Link(props) {
   return (
     <a
-      className="hover:text-text-secondary font-bold transition-all"
+      className="text-text-secondary hover:text-text-primary font-bold transition-all flex gap-2 items-center"
       rel="noopener noreferrer"
       target="_blank"
       {...props}
