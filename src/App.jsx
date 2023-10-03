@@ -4,6 +4,8 @@ import styles from "./App.module.css";
 
 import Logo from "./components/Logo";
 
+import headshot from "./assets/headshot.png";
+
 export default function App() {
   const [reference, setReference] = React.useState();
 
@@ -40,19 +42,24 @@ export default function App() {
   }, [getReference]);
 
   return (
-    <main className="w-full min-h-screen bg-background p-8 lg:p-16 font-sans text-text-primary flex flex-col items-center">
-      <header className="animate animate-fade-in-up w-full max-w-lg lg:max-w-2xl mb-24 lg:mb-32">
+    <main className="w-full min-h-screen bg-background p-8 pt-4 lg:p-16 lg:pt-8 font-sans text-text-primary flex flex-col items-center">
+      <header className="w-full max-w-lg lg:max-w-2xl mb-4 lg:mb-8">
         <Logo
           id={styles.logo}
-          className="max-w-[70px] lg:max-w-[100px] mb-4 lg:mb-8 stroke-text-secondary"
+          className="max-w-[70px] lg:max-w-[100px] stroke-text-secondary"
         />
-        <h1 className="font-sans font-extrabold text-2xl lg:text-4xl">
-          Andrew Brice
-        </h1>
-        <h2 className="font-sans font-light text-lg lg:text-2xl">
-          Software Engineer
-        </h2>
       </header>
+      <article className="w-full max-w-lg lg:max-w-2xl mb-8 lg:mb-16 bg-text-secondary bg-opacity-10 rounded-3xl flex items-center justify-between overflow-hidden p-4 pb-0 xs:p-8 xs:pb-0 lg:p-16 lg:pb-0">
+        <div className="mb-16">
+          <h1 className="font-sans font-extrabold text-xl xs:text-2xl lg:text-4xl">
+            Andrew Brice
+          </h1>
+          <h2 className="font-sans font-light text-sm xs:text-lg lg:text-2xl">
+            Software Engineer
+          </h2>
+        </div>
+        <img className="w-1/2" src={headshot} />
+      </article>
       <article className="w-full max-w-lg lg:max-w-2xl mb-8 lg:mb-16">
         <h3 className="font-bold text-lg lg:text-2xl mb-4 lg:mb-6">About</h3>
         <p className="font-light text-base lg:text-xl mb-4 lg:mb-6">
@@ -76,8 +83,8 @@ export default function App() {
       {reference?.value && (
         <article className="w-full max-w-lg lg:max-w-2xl mb-8 lg:mb-16">
           <h3 className="flex items-center justify-between font-bold text-lg lg:text-2xl mb-4 lg:mb-6">
-            References
-            <button
+            Work
+            {/* <button
               className="hover:text-text-primary rounded-full transition-all p-2 inline-flex items-center text-text-secondary"
               onClick={getReference}
             >
@@ -95,8 +102,12 @@ export default function App() {
                   d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"
                 />
               </svg>
-            </button>
+            </button> */}
           </h3>
+          <p className="font-light text-base lg:text-xl mb-4 lg:mb-6">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam et
+            pariatur corrupti consectetur.
+          </p>
           <div className="px-4 py-8 mx-auto text-center bg-text-secondary bg-opacity-10 rounded-2xl flex-1">
             <figure className="max-w-screen-md mx-auto">
               <svg

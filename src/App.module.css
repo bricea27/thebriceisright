@@ -12,7 +12,7 @@
   animation-timing-function: ease-in-out;
 }
 
-h1,
+/* h1,
 h2,
 article {
   opacity: 0;
@@ -33,7 +33,7 @@ h2 {
 
 article {
   animation-delay: 1.5s;
-}
+} */
 
 @keyframes drawLine {
   0% {
