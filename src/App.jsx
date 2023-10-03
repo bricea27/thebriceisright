@@ -42,49 +42,52 @@ export default function App() {
   }, [getReference]);
 
   return (
-    <main className="w-full min-h-screen bg-background p-8 pt-4 lg:p-16 lg:pt-8 font-sans text-text-primary flex flex-col items-center">
-      <header className="w-full max-w-lg lg:max-w-2xl mb-4 lg:mb-8">
+    <div className="w-full min-h-screen bg-background font-sans text-text-primary sm:px-8 md:px-16">
+      <header className="w-full max-w-lg lg:max-w-2xl mx-auto p-8 sm:px-0 sm:py-16 ">
         <Logo
           id={styles.logo}
-          className="max-w-[70px] lg:max-w-[100px] stroke-text-secondary"
+          className="max-w-[60px] lg:max-w-[80px] stroke-text-secondary"
         />
       </header>
-      <article className="w-full max-w-lg lg:max-w-2xl mb-8 lg:mb-16 bg-text-secondary bg-opacity-10 rounded-3xl flex items-center justify-between overflow-hidden p-4 pb-0 xs:p-8 xs:pb-0 lg:p-16 lg:pb-0">
-        <div className="mb-4 xs:mb-8 lg:mb-16">
-          <h1 className="font-sans font-extrabold text-xl xs:text-2xl lg:text-4xl">
-            Andrew Brice
-          </h1>
-          <h2 className="font-sans font-light text-sm xs:text-lg lg:text-2xl">
-            Software Engineer
-          </h2>
-        </div>
-        <img className="w-1/2" src={headshot} />
-      </article>
-      <article className="w-full max-w-lg lg:max-w-2xl mb-8 lg:mb-16">
-        <h3 className="font-bold text-lg lg:text-2xl mb-4 lg:mb-6">About</h3>
-        <p className="font-light text-base lg:text-xl mb-4 lg:mb-6">
-          Andrew Brice is a UI focused software engineer with ten years of
-          experience coding for the web. He leverages his background in design
-          to craft clean, user-friendly web applications, interfaces, and
-          interactions.
-        </p>
-        <p className="font-light text-base lg:text-xl mb-4 lg:mb-6">
-          Born in New York City and raised in New Jersey, Andrew took a job in
-          Indianapolis in 2015 and has since called it home. He now lives in
-          Indy with his wife, son, and their two dogs.
-        </p>
-        <p className="font-light text-base lg:text-xl mb-4 lg:mb-6">
-          Andrew loves to read sci-fi and fantasy, tinker with his mechanical
-          keyboards, and play beer league softball on Sunday afternoons. His
-          favorite thing to do, aside from making his son laugh, is to go to the
-          movies and crush a large buttered popcorn (layered, of course).
-        </p>
-      </article>
-      {reference?.value && (
-        <article className="w-full max-w-lg lg:max-w-2xl mb-8 lg:mb-16">
-          <h3 className="flex items-center justify-between font-bold text-lg lg:text-2xl mb-4 lg:mb-6">
-            Work
-            {/* <button
+      <main className="w-full flex flex-col items-center">
+        <section className="w-full lg:max-w-4xl flex place-content-center mb-16 lg:mb-24 bg-text-secondary bg-opacity-10 sm:rounded-3xl px-8 sm:p-0">
+          <article className="w-full max-w-lg lg:max-w-2xl rounded-3xl flex items-center justify-between overflow-hidden pt-16">
+            <div className="mb-16">
+              <h1 className="font-sans font-extrabold text-xl xs:text-2xl lg:text-4xl">
+                Andrew Brice
+              </h1>
+              <h2 className="font-sans font-light text-sm xs:text-lg lg:text-2xl">
+                Software Engineer
+              </h2>
+            </div>
+            <img className="w-1/2" src={headshot} />
+          </article>
+        </section>
+        <article className="w-full max-w-lg lg:max-w-2xl mb-8 lg:mb-16 px-8 sm:p-0">
+          <h3 className="font-bold text-lg lg:text-2xl mb-4 lg:mb-6">About</h3>
+          <p className="font-light text-base lg:text-xl mb-4 lg:mb-6">
+            Andrew Brice is a UI focused software engineer with ten years of
+            experience coding for the web. He leverages his background in design
+            to craft clean, user-friendly web applications, interfaces, and
+            interactions.
+          </p>
+          <p className="font-light text-base lg:text-xl mb-4 lg:mb-6">
+            Born in New York City and raised in New Jersey, Andrew took a job in
+            Indianapolis in 2015 and has since called it home. He now lives in
+            Indy with his wife, son, and their two dogs.
+          </p>
+          <p className="font-light text-base lg:text-xl mb-4 lg:mb-6">
+            Andrew loves to read sci-fi and fantasy, tinker with his mechanical
+            keyboards, and play beer league softball on Sunday afternoons. His
+            favorite thing to do, aside from making his son laugh, is to go to
+            the movies and crush a large buttered popcorn (layered, of course).
+          </p>
+        </article>
+        {reference?.value && (
+          <article className="w-full max-w-lg lg:max-w-2xl mb-8 lg:mb-16 px-8 sm:p-0">
+            <h3 className="flex items-center justify-between font-bold text-lg lg:text-2xl mb-4 lg:mb-6">
+              Work
+              {/* <button
               className="hover:text-text-primary rounded-full transition-all p-2 inline-flex items-center text-text-secondary"
               onClick={getReference}
             >
@@ -103,43 +106,44 @@ export default function App() {
                 />
               </svg>
             </button> */}
-          </h3>
-          <p className="font-light text-base lg:text-xl mb-4 lg:mb-6">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam et
-            pariatur corrupti consectetur.
-          </p>
-          <div className="px-4 py-8 mx-auto text-center bg-text-secondary bg-opacity-10 rounded-2xl flex-1">
-            <figure className="max-w-screen-md mx-auto">
-              <svg
-                className="h-12 mx-auto mb-3 text-text-secondary opacity-30"
-                viewBox="0 0 24 27"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
-                  fill="currentColor"
-                />
-              </svg>
-              <blockquote>
-                <p className="font-medium  text-base lg:text-xl">
-                  "{reference.value}"
-                </p>
-              </blockquote>
-              <figcaption className="flex items-center justify-center mt-6 space-x-3">
-                <img
-                  className="w-6 h-6 rounded-full"
-                  src={reference.picture.thumbnail}
-                  alt="profile picture"
-                />
-                <div className="font-normal text- dark:text-white">
-                  {reference?.name.first} {reference.name.last}
-                </div>
-              </figcaption>
-            </figure>
-          </div>
-        </article>
-      )}
-    </main>
+            </h3>
+            <p className="font-light text-base lg:text-xl mb-4 lg:mb-6">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam
+              et pariatur corrupti consectetur.
+            </p>
+            <div className="px-4 py-8 mx-auto text-center bg-text-secondary bg-opacity-10 rounded-2xl flex-1">
+              <figure className="max-w-screen-md mx-auto">
+                <svg
+                  className="h-12 mx-auto mb-3 text-text-secondary opacity-30"
+                  viewBox="0 0 24 27"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <blockquote>
+                  <p className="font-medium  text-base lg:text-xl">
+                    "{reference.value}"
+                  </p>
+                </blockquote>
+                <figcaption className="flex items-center justify-center mt-6 space-x-3">
+                  <img
+                    className="w-6 h-6 rounded-full"
+                    src={reference.picture.thumbnail}
+                    alt="profile picture"
+                  />
+                  <div className="font-normal text- dark:text-white">
+                    {reference?.name.first} {reference.name.last}
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </article>
+        )}
+      </main>
+    </div>
   );
 }
