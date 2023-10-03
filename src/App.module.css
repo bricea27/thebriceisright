@@ -1,10 +1,15 @@
-#logo path {
-  fill: none;
-  stroke-width: 10px;
+#loader {
+  animation-name: slideUp;
+  animation-duration: 0.5s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+#loader path {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  stroke-linecap: round;
-  stroke-linejoin: round;
   animation-name: drawLine;
   animation-duration: 1s;
   animation-fill-mode: forwards;
@@ -12,28 +17,16 @@
   animation-timing-function: ease-in-out;
 }
 
-/* h1,
-h2,
-article {
+header,
+main {
   opacity: 0;
   animation-name: fadeInUp;
   animation-duration: 0.5s;
+  animation-delay: 2s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
 }
-
-h1 {
-  animation-delay: 1s;
-}
-
-h2 {
-  animation-delay: 1.25s;
-}
-
-article {
-  animation-delay: 1.5s;
-} */
 
 @keyframes drawLine {
   0% {
@@ -54,5 +47,15 @@ article {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    visibility: hidden;
+    transform: translateY(-100%);
   }
 }

@@ -44,10 +44,17 @@ export default function App() {
 
   return (
     <div className="w-full min-h-screen bg-background font-sans text-text-primary sm:px-8 md:px-16">
+      <section
+        id={styles.loader}
+        className="w-full h-screen bg-text-primary flex place-content-center fixed top-0 left-0 z-10"
+      >
+        <Logo className="w-[100px] lg:w-[140px] stroke-background stroke-[10px]" />
+      </section>
+
       <header className="w-full max-w-lg lg:max-w-2xl flex items-center justify-between mx-auto p-8 sm:px-0 sm:py-12">
         <Logo
           id={styles.logo}
-          className="w-[60px] lg:w-[80px] stroke-text-secondary"
+          className="w-[60px] lg:w-[80px] stroke-text-secondary stroke-[10px]"
         />
         <div className="flex items-center gap-9">
           <Link href="https://github.com/bricea27">Github</Link>
