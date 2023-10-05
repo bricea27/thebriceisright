@@ -6,28 +6,6 @@
   font-size: clamp(1rem, 0.5091rem + 2.1818vw, 4rem);
 }
 
-#eye {
-  position: relative;
-  display: inline-block;
-  height: 30px;
-  width: 30px;
-  background: #fff;
-  border-radius: 100%;
-  /* transform: rotate(45deg);  */
-}
-
-/* Pupil */
-#eye:after {
-  position: absolute;
-  bottom: 17px;
-  right: 10px;
-  width: 10px;
-  height: 10px;
-  background: #000;
-  border-radius: 50%;
-  content: " ";
-}
-
 #loader {
   animation-name: slideUp;
   animation-duration: 0.5s;
@@ -47,7 +25,7 @@
   animation-timing-function: ease-in-out;
 }
 
-header,
+/* header,
 main {
   opacity: 0;
   animation-name: fadeInUp;
@@ -88,4 +66,4 @@ main {
     visibility: hidden;
     transform: translateY(-100%);
   }
-}
+} */
