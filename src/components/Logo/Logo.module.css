@@ -1,0 +1,37 @@
+#logo polyline,
+#logo polygon {
+  fill: none;
+  stroke-width: 10px;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  animation-name: drawLine;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+#logo path {
+	stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation-name: drawLine;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes drawLine {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+		stroke-dashoffset: 1000;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    stroke-dashoffset: 0;
+  }
+}

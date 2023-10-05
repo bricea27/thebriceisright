@@ -1,6 +1,13 @@
+import styles from "./Logo.module.css";
+
 export default function Logo(props) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 226 214.5" {...props}>
+    <svg
+      id={styles.logo}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 226 214.5"
+      {...props}
+    >
       <path
         fill="none"
         strokeLinecap="round"
@@ -22,3 +29,29 @@ export default function Logo(props) {
     </svg>
   );
 }
+
+// export default function Logo(props) {
+//   return (
+//     <svg
+//       id={styles.logo}
+//       xmlns="http://www.w3.org/2000/svg"
+//       viewBox="0 0 300 344.6"
+//       {...props}
+//     >
+//       <g>
+//         <polygon
+//           pathLength="1"
+//           points="114 130.7 78 151.5 78 193.1 114 172.3 114 130.7"
+//         />
+//         <polygon
+//           pathLength="1"
+//           points="222.5 151.1 222.5 192.6 186.5 213.4 186.5 171.8 222.5 151.1"
+//         />
+//         <polyline
+//           pathLength="1"
+//           points="114.3 255.6 150 276.2 258 213.8 258 172.3 258 130.7 222 109.9 186.5 130.7 186.5 89.1 150 68.4 150 234.6 114 213.8 78 234.6 42 213.8 42 130.7 78 109.9 114 89.1"
+//         />
+//       </g>
+//     </svg>
+//   );
+// }
