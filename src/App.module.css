@@ -1,3 +1,33 @@
+#name {
+  font-size: clamp(2rem, 1.0182rem + 4.3636vw, 8rem);
+}
+
+#tagline {
+  font-size: clamp(1rem, 0.5091rem + 2.1818vw, 4rem);
+}
+
+#eye {
+  position: relative;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background: #fff;
+  border-radius: 100%;
+  /* transform: rotate(45deg);  */
+}
+
+/* Pupil */
+#eye:after {
+  position: absolute;
+  bottom: 17px;
+  right: 10px;
+  width: 10px;
+  height: 10px;
+  background: #000;
+  border-radius: 50%;
+  content: " ";
+}
+
 #loader {
   animation-name: slideUp;
   animation-duration: 0.5s;

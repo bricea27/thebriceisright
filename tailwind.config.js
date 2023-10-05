@@ -7,15 +7,22 @@ export default {
   theme: {
     colors: {
       ...colors,
-      background: "#F3EDE4",
-      "background-light": "#D9C3AA",
-      text: {
-        primary: "#394041",
-        secondary: "#8D866E",
-      },
+      // background: "#F3EDE4",
+      // "background-light": "#D9C3AA",
+      // text: {
+      //   primary: "#394041",
+      //   secondary: "#8D866E",
+      // },
+      bg: "#131417",
+      link: "#aaa",
+      "link-hover": "#fff",
+      label: "#adadad",
+      text:"#fff",
+      "text-alt": "#575757",
+      caption: "#fff",
     },
     fontFamily: {
-      sans: ["circe-rounded", "sans-serif"],
+      sans: ["DM Sans", "sans-serif"],
     },
     extend: {
       screens: {
