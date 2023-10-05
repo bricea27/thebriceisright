@@ -16,17 +16,17 @@ export default function App() {
           </span>
         </h1>
       </section>
-      <section className="w-full max-w-7xl mx-auto px-8 sm:px-16 py-96">
+      <section className="w-full max-w-7xl mx-auto px-8 sm:px-16 py-32">
         <h2 className="font-bold text-text-alt text-xl sm:text-3xl mb-4">
           About
         </h2>
-        <div className="flex flex-wrap md:flex-nowrap gap-8">
-          <p className="text-xl lg:text-3xl flex-1">
+        <div className="flex flex-col lg:flex-row gap-8">
+          <p className="max-w-md lg:max-w-none text-xl lg:text-3xl flex-1">
             Hi, I'm Andrew - a UI focused software engineer with ten years of
             experience coding for the web. I leverage my background in design to
             craft clean, user-friendly web applications.
           </p>
-          <p className="text-xl lg:text-3xl flex-1">
+          <p className="max-w-md lg:max-w-none text-xl lg:text-3xl flex-1">
             Currently, I'm helping build world class sales forecasting software
             for the folks over at Outreach, utilizing React.js, TypeScript, and
             Apollo GraphQL.
