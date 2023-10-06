@@ -6,44 +6,49 @@ import headshot from "./assets/headshot.jpg";
 export default function App() {
   return (
     <main className="w-full bg-bg font-sans text-text">
-      <section className="w-full max-w-7xl min-h-screen flex flex-col mx-auto p-8 sm:p-16">
-        <Logo className="[width:_clamp(4rem,9vw,6rem)] stroke-text stroke-[8px] mb-[30vh]" />
-        <h1 className="max-w-xl lg:max-w-4xl font-sans font-black leading-none [font-size:_clamp(2rem,5vw,4rem)] animate animate-fade-in-up">
-          Andrew Brice{" "}
+      <section className="w-full max-w-7xl min-h-screen flex flex-col mx-auto p-8 sm:p-16 justify-around">
+        <Logo className="[width:_clamp(4rem,9vw,6rem)] stroke-text stroke-[10px]" />
+        <h1 className="font-black leading-none [font-size:_clamp(2rem,9vw,6rem)] animate animate-fade-in-up">
+          Andrew Brice
+          <br />
           <span className="text-text-alt">
-            is a software engineer with ten years of experience coding for the
-            web.
+            Software Engineer
+            <br />& Mentor
           </span>
         </h1>
       </section>
-      <section className="w-full max-w-7xl mx-auto px-8 sm:px-16 py-32">
-        <h2 className="font-bold text-text-alt text-xl sm:text-3xl mb-4">
-          About
-        </h2>
+      <article className="w-full max-w-7xl mx-auto px-8 sm:px-16 py-32 animate animate-fade-in-up">
+        <h2 className="font-bold text-label text-xl lg:text-3xl mb-4">About</h2>
         <div className="flex flex-col lg:flex-row gap-8">
-          <p className="max-w-md lg:max-w-none text-xl lg:text-3xl flex-1">
+          <p className="max-w-md lg:max-w-[50%] text-text-alt text-xl lg:text-3xl">
             Hi, I'm Andrew - a UI focused software engineer with ten years of
-            experience coding for the web. I leverage my background in design to
-            craft clean, user-friendly web applications.
+            experience writing code for the web. I leverage my background in
+            design to craft clean, user-friendly applications.
           </p>
-          <p className="max-w-md lg:max-w-none text-xl lg:text-3xl flex-1">
-            Currently, I'm helping build world class sales forecasting software
+          {/* <p className="max-w-md lg:max-w-none text-text-alt text-xl lg:text-3xl flex-1">
+            Currently, I'm helping build world-class sales forecasting software
             for the folks over at Outreach, utilizing React.js, TypeScript, and
             Apollo GraphQL.
           </p>
+          */}
+          <p className="max-w-md lg:max-w-[50%] text-text-alt text-xl lg:text-3xl">
+            I currently live in Indianapolis with my wife, son, and our two
+            dogs. As a midwest transplant, my New Jersey accent has diminished,
+            but my high pizza standards remain resolute.
+          </p>
         </div>
-      </section>
-      <section className="w-full bg-bg-alt">
-        <article className="w-full max-w-7xl mx-auto px-8 sm:px-16 py-32">
-          <div className="w-full flex items-start md:items-center justify-between flex-col-reverse md:flex-row gap-8">
-            <div className="flex flex-col flex-1">
-              <h2 className="font-bold text-text-alt text-xl lg:text-2xl mb-4">
-                Get in touch
-              </h2>
-              <p className="max-w-[80%] text-lg lg:text-2xl mb-4">
-                Whether you'd like to discuss an opportunity or simply talk
-                shop, I'd love to connect!
-              </p>
+      </article>
+      <footer className="w-full max-w-7xl mx-auto px-8 sm:px-16 py-32 animate animate-fade-in-up">
+        <div className="w-full flex items-start lg:items-center justify-between flex-col-reverse lg:flex-row gap-8">
+          <div className="flex flex-col flex-1">
+            <h2 className="font-bold text-label text-xl lg:text-3xl mb-4">
+              Get in touch
+            </h2>
+            <p className="max-w-md lg:max-w-[80%] text-text-alt text-xl lg:text-3xl mb-4">
+              Whether you'd like to discuss an opportunity or simply talk shop,
+              I'd love to connect!
+            </p>
+            <div className="flex flex-col gap-2">
               <Link href="mailto:bricea27@gmail.com">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +56,7 @@ export default function App() {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="w-6 h-6 stroke-text-alt"
+                  className="w-6 h-6"
                 >
                   <path
                     strokeLinecap="round"
@@ -68,7 +73,7 @@ export default function App() {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="w-6 h-6 mb-2 stroke-text-alt"
+                  className="w-6 h-6"
                 >
                   <path
                     strokeLinecap="round"
@@ -85,7 +90,7 @@ export default function App() {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="w-6 h-6 stroke-text-alt"
+                  className="w-6 h-6"
                 >
                   <path
                     strokeLinecap="round"
@@ -96,12 +101,12 @@ export default function App() {
                 LinkedIn
               </Link>
             </div>
-            <div className="flex flex-1">
-              <img className="max-w-[50%] md:max-w-xs rounded-3xl" src={headshot} />
-            </div>
           </div>
-        </article>
-      </section>
+          <div className="flex flex-1">
+            <img className="w-1/2 max-w-xs rounded-xl" src={headshot} />
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }

@@ -7,18 +7,13 @@ export default {
   theme: {
     colors: {
       ...colors,
-      // bg: "#131417",
-      bg: "#221706",
-      "bg-alt": "#362616",
+      bg: "#131417",
       link: "#aaa",
       "link-hover": "#fff",
-      // label: "#adadad",
-      // text: "#fff",
-      text: "#E5D7CB",
-      // "text-alt": "#575757",
-      "text-alt": "#6A5C46",
-      // caption: "#fff",
-      caption: "#362616"
+      label: "#adadad",
+      text: "#fff",
+      "text-alt": "#575757",
+      caption: "#fff",
     },
     fontFamily: {
       sans: ["DM Sans", "sans-serif"],
