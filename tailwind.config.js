@@ -20,7 +20,7 @@ export default {
     },
     extend: {
       animation: {
-        "draw-line": "draw-line 0.6s ease-in-out",
+        "draw-line": "draw-line 1s ease-in-out",
         "fade-in-up": "fade-in-up 0.6s ease-in-out",
       },
       keyframes: {
@@ -29,6 +29,10 @@ export default {
             opacity: 0,
             transform: "translateY(20px)",
             strokeDashoffset: 1000,
+          },
+          "60%": {
+            opacity: 1,
+            transform: "translateY(0)",
           },
           "100%": {
             opacity: 1,
