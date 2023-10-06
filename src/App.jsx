@@ -33,7 +33,7 @@ export default function App() {
         </div>
       </article>
       <footer className="w-full max-w-7xl mx-auto px-8 sm:px-16 xl:px-32 py-32 animate animate-fade-in-up">
-        <div className="w-full flex items-start lg:items-center justify-between flex-col-reverse lg:flex-row gap-8">
+        <div className="w-full flex items-start justify-between flex-col-reverse lg:flex-row gap-8">
           <div className="flex flex-col flex-1">
             <h2 className="font-bold text-label text-xl lg:text-3xl mb-4">
               Contact
