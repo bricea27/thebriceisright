@@ -6,9 +6,9 @@ import headshot from "./assets/headshot.jpg";
 export default function App() {
   return (
     <main className="w-full bg-bg font-sans text-text">
-      <section className="w-full max-w-7xl min-h-screen flex flex-col mx-auto p-8 sm:p-16 justify-around">
-        <Logo className="[width:_clamp(4rem,9vw,6rem)] stroke-text stroke-[10px]" />
-        <h1 className="font-black leading-none [font-size:_clamp(2rem,9vw,6rem)] animate animate-fade-in-up">
+      <section className="w-full max-w-7xl min-h-screen flex flex-col mx-auto p-8 sm:p-16">
+        <Logo className="[width:_clamp(4rem,9vw,6rem)] stroke-text stroke-[10px] mb-auto" />
+        <h1 className="font-black leading-none [font-size:_clamp(2rem,9vw,6rem)] my-32 animate animate-fade-in-up">
           Andrew Brice
           <br />
           <span className="text-text-alt">
