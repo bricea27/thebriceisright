@@ -19,16 +19,16 @@ export default function App() {
         </h1>
       </header>
       <section className="w-full max-w-7xl mx-auto px-8 sm:px-16 xl:px-32 py-32 animate-fade-in-up">
-        <h2 className="font-bold text-label text-xl lg:text-3xl mb-4">
+        <h2 className="font-bold text-label text-xl lg:text-3xl lg:leading-[1.4] mb-4">
           About
         </h2>
         <article className="flex flex-col lg:flex-row gap-8 lg:gap-12">
-          <p className="max-w-md lg:max-w-[50%] text-text-alt text-xl lg:text-3xl flex-1">
-            Hi, I'm Andrew, a front-end engineer with ten years of
-            experience coding for the web. I leverage my background in
-            design to craft clean, user-friendly applications.
+          <p className="max-w-md lg:max-w-[50%] text-text-alt text-xl lg:text-3xl lg:leading-[1.4] flex-1">
+            Hi, I'm Andrew, a front-end engineer with ten years of experience
+            coding for the web. I leverage my background in design to craft
+            clean, user-friendly applications.
           </p>
-          <p className="max-w-md lg:max-w-[50%] text-text-alt text-xl lg:text-3xl flex-1">
+          <p className="max-w-md lg:max-w-[50%] text-text-alt text-xl lg:text-3xl lg:leading-[1.4] flex-1">
             I currently live in Indianapolis with my wife, son, and our two
             dogs. As a midwest transplant, my New Jersey accent has diminished,
             but my high pizza standards remain resolute.
@@ -36,35 +36,35 @@ export default function App() {
         </article>
       </section>
       {/* <section className="w-full max-w-7xl mx-auto px-8 sm:px-16 xl:px-32 py-32 animate-fade-in-up">
-        <h2 className="font-bold text-label text-xl lg:text-3xl mb-4">Work</h2>
+        <h2 className="font-bold text-label text-xl lg:text-3xl lg:leading-[1.4] mb-4">Work</h2>
         <article className="flex flex-col lg:flex-row gap-8 lg:gap-12 mb-16">
-          <p className="max-w-md lg:max-w-[50%] text-text-alt text-xl lg:text-3xl">
+          <p className="max-w-md lg:max-w-[50%] text-text-alt text-xl lg:text-3xl lg:leading-[1.4]">
             Currently, I'm helping build world-class sales forecasting software
             for the folks over at{" "}
             <Link href="https://www.outreach.io/">Outreach</Link>.
           </p>
-          <p className="max-w-md lg:max-w-[50%] text-text-alt text-xl lg:text-3xl">
+          <p className="max-w-md lg:max-w-[50%] text-text-alt text-xl lg:text-3xl lg:leading-[1.4]">
             React.js, TypeScript, Apollo GraphQL, Material UI
           </p>
         </article>
         <article className="flex flex-col lg:flex-row gap-8 lg:gap-12 mb-16">
-          <p className="max-w-md lg:max-w-[50%] text-text-alt text-xl lg:text-3xl">
+          <p className="max-w-md lg:max-w-[50%] text-text-alt text-xl lg:text-3xl lg:leading-[1.4]">
             Previously, I was making meetings awesome with the team at{" "}
             <Link href="https://www.crunchbase.com/organization/docket-fd06">
               DocketHQ
             </Link>{" "}
             (sold to Zoom in 2022).
           </p>
-          <p className="max-w-md lg:max-w-[50%] text-text-alt text-xl lg:text-3xl">
+          <p className="max-w-md lg:max-w-[50%] text-text-alt text-xl lg:text-3xl lg:leading-[1.4]">
             React.js, Apollo GraphQL, Material UI, Slate.js
           </p>
         </article>
         <article className="flex flex-col lg:flex-row gap-8 lg:gap-12">
-          <p className="max-w-md lg:max-w-[50%] text-text-alt text-xl lg:text-3xl">
+          <p className="max-w-md lg:max-w-[50%] text-text-alt text-xl lg:text-3xl lg:leading-[1.4]">
             And prior to that, I helped improve the contact center agent
             experience at <Link href="https://sharpencx.com/">SharpenCX</Link>.
           </p>
-          <p className="max-w-md lg:max-w-[50%] text-text-alt text-xl lg:text-3xl">
+          <p className="max-w-md lg:max-w-[50%] text-text-alt text-xl lg:text-3xl lg:leading-[1.4]">
             Bootstap, Socket.io, WebRTC, PHP
           </p>
         </article>
@@ -72,10 +72,10 @@ export default function App() {
       <footer className="w-full max-w-7xl mx-auto px-8 sm:px-16 xl:px-32 py-32 animate-fade-in-up">
         <div className="w-full flex items-start justify-between flex-col-reverse lg:flex-row gap-8 lg:gap-12">
           <div className="flex flex-col flex-1">
-            <h2 className="font-bold text-label text-xl lg:text-3xl mb-4">
+            <h2 className="font-bold text-label text-xl lg:text-3xl lg:leading-[1.4] mb-4">
               Let's chat
             </h2>
-            <p className="max-w-md lg:max-w-[80%] text-text-alt text-xl lg:text-3xl mb-8">
+            <p className="max-w-md lg:max-w-[80%] text-text-alt text-xl lg:text-3xl lg:leading-[1.4] mb-8">
               Whether you'd like to discuss an opportunity or simply talk shop,
               I'd love to connect!
             </p>
