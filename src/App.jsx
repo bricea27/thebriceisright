@@ -6,9 +6,9 @@ import headshot from "./assets/headshot.jpg";
 export default function App() {
   return (
     <main className="w-full bg-bg font-sans text-text">
-      <section className="w-full max-w-7xl min-h-screen flex flex-col mx-auto p-8 sm:p-16">
-        <Logo className="[width:_clamp(4rem,9vw,6rem)] stroke-text stroke-[10px] mb-auto" />
-        <h1 className="font-black leading-none [font-size:_clamp(2rem,9vw,6rem)] my-32 animate animate-fade-in-up">
+      <section className="w-full max-w-7xl flex flex-col mx-auto px-8 sm:px-16 xl:px-32 py-8 sm:py-16 xl:py-32 justify-center">
+        <Logo className="w-16 sm:w-32 stroke-text stroke-[10px] mb-32" />
+        <h1 className="font-black leading-none [font-size:_clamp(2rem,9vw,6rem)] animate animate-fade-in-up">
           Andrew Brice
           <br />
           <span className="text-text-alt">
@@ -17,7 +17,7 @@ export default function App() {
           </span>
         </h1>
       </section>
-      <article className="w-full max-w-7xl mx-auto px-8 sm:px-16 py-32 animate animate-fade-in-up">
+      <article className="w-full max-w-7xl mx-auto px-8 sm:px-16 xl:px-32 py-32 animate animate-fade-in-up">
         <h2 className="font-bold text-label text-xl lg:text-3xl mb-4">About</h2>
         <div className="flex flex-col lg:flex-row gap-8">
           <p className="max-w-md lg:max-w-[50%] text-text-alt text-xl lg:text-3xl">
@@ -25,12 +25,6 @@ export default function App() {
             experience writing code for the web. I leverage my background in
             design to craft clean, user-friendly applications.
           </p>
-          {/* <p className="max-w-md lg:max-w-none text-text-alt text-xl lg:text-3xl flex-1">
-            Currently, I'm helping build world-class sales forecasting software
-            for the folks over at Outreach, utilizing React.js, TypeScript, and
-            Apollo GraphQL.
-          </p>
-          */}
           <p className="max-w-md lg:max-w-[50%] text-text-alt text-xl lg:text-3xl">
             I currently live in Indianapolis with my wife, son, and our two
             dogs. As a midwest transplant, my New Jersey accent has diminished,
@@ -38,17 +32,17 @@ export default function App() {
           </p>
         </div>
       </article>
-      <footer className="w-full max-w-7xl mx-auto px-8 sm:px-16 py-32 animate animate-fade-in-up">
+      <footer className="w-full max-w-7xl mx-auto px-8 sm:px-16 xl:px-32 py-32 animate animate-fade-in-up">
         <div className="w-full flex items-start lg:items-center justify-between flex-col-reverse lg:flex-row gap-8">
           <div className="flex flex-col flex-1">
             <h2 className="font-bold text-label text-xl lg:text-3xl mb-4">
-              Get in touch
+              Contact
             </h2>
             <p className="max-w-md lg:max-w-[80%] text-text-alt text-xl lg:text-3xl mb-4">
               Whether you'd like to discuss an opportunity or simply talk shop,
               I'd love to connect!
             </p>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 text-base lg:text-xl">
               <Link href="mailto:bricea27@gmail.com">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
