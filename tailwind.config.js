@@ -20,16 +20,29 @@ export default {
     },
     extend: {
       animation: {
+        "draw-line": "draw-line 0.6s ease-in-out",
         "fade-in-up": "fade-in-up 0.6s ease-in-out",
       },
       keyframes: {
+        "draw-line": {
+          "0%": {
+            opacity: 0,
+            transform: "translateY(20px)",
+            strokeDashoffset: 1000,
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translateY(0)",
+            strokeDashoffset: 0,
+          },
+        },
         "fade-in-up": {
           "0%": {
-            opacity: "0",
+            opacity: 0,
             transform: "translateY(20px)",
           },
           "100%": {
-            opacity: "1",
+            opacity: 1,
             transform: "translateY(0)",
           },
         },

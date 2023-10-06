@@ -1,9 +1,10 @@
-import styles from "./Logo.module.css";
-
 export default function Logo(props) {
   return (
     <svg
-      id={styles.logo}
+      fill="none"
+      strokeDasharray={1000}
+      strokeLinecap="round"
+      strokeLinejoin="round"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 298 340.29"
       {...props}

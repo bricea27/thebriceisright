@@ -8,8 +8,8 @@ export default function App() {
   return (
     <main className="w-full bg-bg font-sans text-text">
       <section className="w-full max-w-7xl flex flex-col mx-auto px-8 sm:px-16 xl:px-32 py-8 sm:py-16 xl:py-32 justify-center">
-        <Logo className="w-16 sm:w-32 stroke-text stroke-[10px] mb-32" />
-        <h1 className="font-black leading-none [font-size:_clamp(2rem,9vw,6rem)] animate animate-fade-in-up">
+        <Logo className="w-16 sm:w-32 stroke-text stroke-[10px] mb-32 animate-draw-line fill-mode-forwards repeat-1" />
+        <h1 className="font-black leading-none [font-size:_clamp(2rem,9vw,6rem)] animate-fade-in-up">
           Andrew Brice
           <br />
           <span className="text-text-alt">
@@ -18,7 +18,7 @@ export default function App() {
           </span>
         </h1>
       </section>
-      <article className="w-full max-w-7xl mx-auto px-8 sm:px-16 xl:px-32 py-32 animate animate-fade-in-up">
+      <article className="w-full max-w-7xl mx-auto px-8 sm:px-16 xl:px-32 py-32 animate-fade-in-up">
         <h2 className="font-bold text-label text-xl lg:text-3xl mb-4">About</h2>
         <div className="flex flex-col lg:flex-row gap-8">
           <p className="max-w-md lg:max-w-[50%] text-text-alt text-xl lg:text-3xl">
@@ -33,7 +33,7 @@ export default function App() {
           </p>
         </div>
       </article>
-      <footer className="w-full max-w-7xl mx-auto px-8 sm:px-16 xl:px-32 py-32 animate animate-fade-in-up">
+      <footer className="w-full max-w-7xl mx-auto px-8 sm:px-16 xl:px-32 py-32 animate-fade-in-up">
         <div className="w-full flex items-start justify-between flex-col-reverse lg:flex-row gap-8">
           <div className="flex flex-col flex-1">
             <h2 className="font-bold text-label text-xl lg:text-3xl mb-4">
