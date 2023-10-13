@@ -16,11 +16,11 @@ export default function App() {
           </h2>
         </hgroup>
       </header>
-      <article className="w-full bg-white min-h-screen p-16 animate-fade-in-up flex flex-col text-center items-center justify-center">
-        <div className="w-48 h-48 rounded-xl overflow-hidden mb-8 mx-auto">
+      <article className="w-full bg-white min-h-screen p-16 flex flex-col text-center items-center justify-center">
+        <div className="w-48 h-48 rounded-xl overflow-hidden mb-8 mx-auto animate-fade-in-up ">
           <img className="w-full" src={headshot} />
         </div>
-        <p className="w-full max-w-lg text-text-alt text-lg lg:text-xl lg:leading-[1.4] mb-4 lg:mb-8">
+        <p className="w-full max-w-lg text-text-alt text-lg lg:text-xl lg:leading-[1.4] mb-4 lg:mb-8 animate-fade-in-up ">
           Hi, I'm Andrew. I've spent the past ten years writing code for the
           web, leveraging my background in design to craft clean, user-friendly
           experiences. Currently, I'm building sales forecasting software for
@@ -28,11 +28,11 @@ export default function App() {
           <Link href="https://www.outreach.io/">Outreach</Link>, where I spend
           my days working in React, TypeScript, and GraphQL.
         </p>
-        <p className="max-w-md text-text-alt text-lg lg:text-xl lg:leading-[1.4] mb-8">
+        <p className="max-w-md text-text-alt text-lg lg:text-xl lg:leading-[1.4] mb-8 animate-fade-in-up">
           Whether you'd like to discuss an opportunity or simply talk shop, I'd
           love to chat!
         </p>
-        <div className="flex gap-2 text-base lg:text-xl">
+        <div className="flex gap-2 text-base lg:text-xl animate-fade-in-up ">
           <Link href="mailto:bricea27@gmail.com">
             <Envelope />
           </Link>
