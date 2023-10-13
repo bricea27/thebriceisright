@@ -6,68 +6,44 @@ import headshot from "./assets/headshot.jpg";
 
 export default function App() {
   return (
-    <main className="w-full bg-bg font-sans text-text">
-      <header className="w-full max-w-7xl flex flex-col mx-auto px-8 sm:px-16 xl:px-32 py-8 sm:py-16 xl:py-32 justify-center">
-        <Logo className="[width:_clamp(4rem,9vw,6rem)] stroke-text stroke-[10px] mb-32 animate-draw-line fill-mode-forwards repeat-1" />
-        <h1 className="font-extrabold leading-none [font-size:_clamp(2rem,7vw,5rem)] animate-fade-in-up">
-          Andrew Brice
-          <span className="text-text-alt block">
+    <main className="w-full bg-bg font-sans text-text flex flex-col lg:flex-row">
+      <header className="w-full min-h-screen flex flex-col mx-auto p-16 justify-center items-center">
+        <Logo className="max-w-[80px] lg:max-w-[120px] stroke-text stroke-[10px] mb-4 lg:mb-8 animate-draw-line fill-mode-forwards repeat-1" />
+        <hgroup className="animate-fade-in-up text-center">
+          <h1 className="font-extrabold text-3xl lg:text-7xl">Andrew Brice</h1>
+          <h2 className="text-text-alt font-extrabold text-xl lg:text-5xl">
             Software Engineer
-            <br />& Mentor
-          </span>
-        </h1>
+          </h2>
+        </hgroup>
       </header>
-      <section className="w-full max-w-7xl mx-auto px-8 sm:px-16 xl:px-32 py-32 animate-fade-in-up">
-        <h2 className="font-bold text-label text-xl lg:text-2xl lg:leading-[1.4] mb-4">
-          About
-        </h2>
-        <article className="flex flex-wrap gap-8 lg:gap-12">
-          <p className="w-full max-w-md lg:max-w-none lg:flex-1 text-text-alt text-xl lg:text-2xl lg:leading-[1.4]">
-            Hi, I'm Andrew. I've spent the past ten years writing code for the
-            web, leveraging my background in design to craft clean,
-            user-friendly experiences. Currently, I'm building sales forecasting
-            software for the folks over at{" "}
-            <Link href="https://www.outreach.io/">Outreach</Link>, where I spend
-            my days working in React, TypeScript, and GraphQL.
-          </p>
-          <p className="w-full max-w-md lg:max-w-none lg:flex-1 text-text-alt text-xl lg:text-2xl lg:leading-[1.4]">
-            Originally from the east coast, I now live in Indianapolis with my
-            wife, son, and our two dogs. When I'm not writing code (or reading
-            about it), I'm either at the gym, at the movies, or at home making
-            my son laugh.
-          </p>
-        </article>
-      </section>
-      <footer className="w-full max-w-7xl mx-auto px-8 sm:px-16 xl:px-32 py-32 animate-fade-in-up">
-        <div className="w-full flex flex-wrap gap-8 lg:gap-12">
-          <div className=" w-full max-w-md lg:max-w-none lg:flex-1 flex flex-col">
-            <h2 className="font-bold text-label text-xl lg:text-2xl lg:leading-[1.4] mb-4">
-              Let's chat
-            </h2>
-            <p className="max-w-md lg:max-w-[80%] text-text-alt text-xl lg:text-2xl lg:leading-[1.4] mb-8">
-              Whether you'd like to discuss an opportunity or simply talk shop,
-              I'd love to connect!
-            </p>
-            <div className="flex flex-col gap-2 text-base lg:text-xl">
-              <Link href="mailto:bricea27@gmail.com">
-                <Envelope />
-                bricea27@gmail.com
-              </Link>
-              <Link href="https://github.com/bricea27">
-                <Github />
-                <span>Github</span>
-              </Link>
-              <Link href="https://www.linkedin.com/in/briceandrew/">
-                <LinkedIn />
-                LinkedIn
-              </Link>
-            </div>
-          </div>
-          <div className="w-full max-w-md lg:max-w-none lg:flex-1 flex">
-            <img className="w-1/2 max-w-xs rounded-xl" src={headshot} />
-          </div>
+      <article className="w-full bg-white min-h-screen p-16 animate-fade-in-up flex flex-col text-center items-center justify-center">
+        <div className="w-48 h-48 rounded-xl overflow-hidden mb-8 mx-auto">
+          <img className="w-full" src={headshot} />
         </div>
-      </footer>
+        <p className="w-full max-w-lg text-text-alt text-lg lg:text-xl lg:leading-[1.4] mb-4 lg:mb-8">
+          Hi, I'm Andrew. I've spent the past ten years writing code for the
+          web, leveraging my background in design to craft clean, user-friendly
+          experiences. Currently, I'm building sales forecasting software for
+          the folks over at{" "}
+          <Link href="https://www.outreach.io/">Outreach</Link>, where I spend
+          my days working in React, TypeScript, and GraphQL.
+        </p>
+        <p className="max-w-md text-text-alt text-lg lg:text-xl lg:leading-[1.4] mb-8">
+          Whether you'd like to discuss an opportunity or simply talk shop, I'd
+          love to chat!
+        </p>
+        <div className="flex gap-2 text-base lg:text-xl">
+          <Link href="mailto:bricea27@gmail.com">
+            <Envelope />
+          </Link>
+          <Link href="https://github.com/bricea27">
+            <Github />
+          </Link>
+          <Link href="https://www.linkedin.com/in/briceandrew/">
+            <LinkedIn />
+          </Link>
+        </div>
+      </article>
     </main>
   );
 }
