@@ -3,7 +3,7 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontFamily: {
-      sans: ["DM Sans", "sans-serif"],
+      sans: ["superblue", "DM Sans", "sans-serif"],
     },
     extend: {
       animation: {
