@@ -6,23 +6,24 @@ import headshot from "./assets/headshot.jpg";
 
 export default function App() {
   return (
-    <main className="w-full bg-bg font-sans text-text">
-      <header className="w-full max-w-7xl flex flex-col mx-auto px-8 sm:px-16 xl:px-32 py-8 sm:py-16 xl:py-32 justify-center">
-        <Logo className="[width:_clamp(4rem,9vw,6rem)] stroke-text stroke-[10px] mb-32 animate-draw-line fill-mode-forwards repeat-1" />
-        <h1 className="font-extrabold leading-none [font-size:_clamp(2rem,7vw,5rem)] animate-fade-in-up">
-          Andrew Brice
-          <span className="text-text-alt block">
-            Software Engineer
-            <br />& Mentor
-          </span>
-        </h1>
+    <main className="w-full bg-neutral-950 font-sans text-neutral-100">
+      <header className="bg-gradient-to-b from-neutral-800 to-neutral-950">
+        <hgroup className="w-full flex flex-col mx-auto px-8 sm:px-16 pt-8 pb-32 sm:pt-16 justify-center max-w-7xl">
+          <Logo className="[width:_clamp(4rem,9vw,6rem)] stroke-neutral-100 stroke-[10px] mb-32 animate-draw-line fill-mode-forwards repeat-1" />
+          <h1 className="font-extrabold leading-none [font-size:_clamp(2rem,7vw,5rem)] animate-fade-in-up">
+            Andrew Brice
+            <span className="font-normal text-neutral-600 block">
+              Software Engineer &<br />Mentor
+            </span>
+          </h1>
+        </hgroup>
       </header>
-      <section className="w-full max-w-7xl mx-auto px-8 sm:px-16 xl:px-32 py-32 animate-fade-in-up">
+      <section className="w-full max-w-7xl mx-auto px-8 sm:px-16 py-32 animate-fade-in-up">
         <h2 className="font-bold text-label text-xl lg:text-2xl lg:leading-[1.4] mb-4">
           About
         </h2>
         <article className="flex flex-wrap gap-8 lg:gap-12">
-          <p className="w-full max-w-md lg:max-w-none lg:flex-1 text-text-alt text-xl lg:text-2xl lg:leading-[1.4]">
+          <p className="w-full max-w-md lg:max-w-none lg:flex-1 text-neutral-600 text-xl lg:text-2xl lg:leading-[1.4]">
             Hi, I'm Andrew. I've spent the past ten years writing code for the
             web, leveraging my background in design to craft clean,
             user-friendly experiences. Currently, I'm building sales forecasting
@@ -30,7 +31,7 @@ export default function App() {
             <Link href="https://www.outreach.io/">Outreach</Link>, where I spend
             my days working in React, TypeScript, and GraphQL.
           </p>
-          <p className="w-full max-w-md lg:max-w-none lg:flex-1 text-text-alt text-xl lg:text-2xl lg:leading-[1.4]">
+          <p className="w-full max-w-md lg:max-w-none lg:flex-1 text-neutral-600 text-xl lg:text-2xl lg:leading-[1.4]">
             Originally from the east coast, I now live in Indianapolis with my
             wife, son, and our two dogs. When I'm not writing code (or reading
             about it), I'm either at the gym, at the movies, or at home making
@@ -38,13 +39,13 @@ export default function App() {
           </p>
         </article>
       </section>
-      <footer className="w-full max-w-7xl mx-auto px-8 sm:px-16 xl:px-32 py-32 animate-fade-in-up">
+      <footer className="w-full max-w-7xl mx-auto px-8 sm:px-16 py-32 animate-fade-in-up">
         <div className="w-full flex flex-wrap gap-8 lg:gap-12">
           <div className=" w-full max-w-md lg:max-w-none lg:flex-1 flex flex-col">
             <h2 className="font-bold text-label text-xl lg:text-2xl lg:leading-[1.4] mb-4">
               Let's chat
             </h2>
-            <p className="max-w-md lg:max-w-[80%] text-text-alt text-xl lg:text-2xl lg:leading-[1.4] mb-8">
+            <p className="max-w-md lg:max-w-[80%] text-neutral-600 text-xl lg:text-2xl lg:leading-[1.4] mb-8">
               Whether you'd like to discuss an opportunity or simply talk shop,
               I'd love to connect!
             </p>
