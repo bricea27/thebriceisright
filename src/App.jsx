@@ -6,18 +6,17 @@ import headshot from "./assets/headshot.jpg";
 
 export default function App() {
   return (
-    <main className="w-full bg-neutral-950 font-sans text-neutral-100">
-      <header className="bg-gradient-to-b from-neutral-800 to-neutral-950">
-        <hgroup className="w-full flex flex-col mx-auto px-8 sm:px-16 pt-8 pb-32 sm:pt-16 justify-center max-w-7xl">
-          <Logo className="[width:_clamp(4rem,9vw,6rem)] stroke-neutral-100 stroke-[10px] mb-32 animate-draw-line fill-mode-forwards repeat-1" />
-          <h1 className="font-extrabold leading-none [font-size:_clamp(2rem,7vw,5rem)] animate-fade-in-up">
-            Andrew Brice
-            <span className="font-normal text-neutral-600 block">
-              Software Engineer &<br />Mentor
-            </span>
-          </h1>
-        </hgroup>
-      </header>
+    <main className="w-full bg-neutral-900 font-sans text-neutral-100">
+      <hgroup className="w-full flex flex-col mx-auto px-8 sm:px-16 pt-8 pb-32 sm:pt-16 justify-center max-w-7xl">
+        <Logo className="[width:_clamp(4rem,9vw,6rem)] stroke-neutral-100 stroke-[10px] mb-32 animate-draw-line fill-mode-forwards repeat-1" />
+        <h1 className="font-extrabold leading-none [font-size:_clamp(2rem,7vw,5rem)] animate-fade-in-up">
+          Andrew Brice
+          <span className="font-normal text-neutral-600 block">
+            Software Engineer &<br />
+            Mentor
+          </span>
+        </h1>
+      </hgroup>
       <section className="w-full max-w-7xl mx-auto px-8 sm:px-16 py-32 animate-fade-in-up">
         <h2 className="font-bold text-label text-xl lg:text-2xl lg:leading-[1.4] mb-4">
           About
