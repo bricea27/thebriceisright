@@ -16,7 +16,7 @@ export default function App() {
           </span>
         </h1>
       </hgroup>
-      <section className="w-full max-w-7xl mx-auto px-8 sm:px-16 py-32 animate-fade-in-up flex flex-wrap justify-between items-center">
+      <section className="w-full max-w-7xl mx-auto px-8 sm:px-16 py-32 animate-fade-in-up flex flex-wrap-reverse gap-12 justify-between items-center">
         <article>
           <h2 className="font-bold text-slate-100 text-xl lg:text-3xl mb-4">
             About
@@ -31,11 +31,11 @@ export default function App() {
           </p>
         </article>
         <div className="w-full max-w-md lg:max-w-lg lg:flex-1 mt-10">
-          <img className="max-w-xs rounded-xl shadow-lg" src={headshot} />
+          <img className="max-w-[200px] lg:max-w-xs rounded-xl shadow-lg" src={headshot} />
         </div>
       </section>
-      <section className="w-full max-w-7xl mx-auto px-8 sm:px-16 py-32 animate-fade-in-up flex flex-wrap justify-between items-center">
-        <blockquote cite="https://keyholesoftware.com/writing-quality-code-practicing-make-it-work-make-it-right-make-it-fast/">
+      <section className="w-full max-w-7xl mx-auto px-8 sm:px-16 py-32 animate-fade-in-up flex flex-wrap gap-12 justify-between items-center">
+        <blockquote className="mt-8" cite="https://keyholesoftware.com/writing-quality-code-practicing-make-it-work-make-it-right-make-it-fast/">
           <p className="font-extrabold leading-none [font-size:_clamp(2rem,7vw,5rem)] animate-fade-in-up flex-1 mb-4">
             Make it work.
             <br />
