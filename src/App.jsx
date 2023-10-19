@@ -7,27 +7,27 @@ import headshot from "./assets/headshot.jpg";
 export default function App() {
   return (
     <>
-      <header className="flex font-sans w-full bg-gradient-to-b from-transparent to-slate-950 px-8 sm:px-16 pt-8 sm:pt-16">
+      <header className="flex font-sans w-full bg-gradient-to-b from-transparent via-transparent to-slate-950 px-8 sm:px-16 pt-8 sm:pt-16">
         <hgroup className="max-w-7xl flex flex-1 flex-col justify-between mx-auto">
           <Logo className="[width:_clamp(3rem,7vw,5rem)] stroke-slate-100 stroke-[10px] animate-draw-line fill-mode-forwards repeat-1" />
           <h1 className="flex flex-1 flex-col justify-center font-extrabold leading-none [font-size:_clamp(2rem,7vw,5rem)] animate-fade-in-up my-32">
-            Andrew Brice
+            Hi, I'm Andrew,
             <span className="font-normal text-slate-500 block">
-              Software Engineer <br />& Mentor
+              a software engineer with a background in design.
             </span>
           </h1>
         </hgroup>
       </header>
       <main className="w-full bg-slate-950 font-sans text-slate-100">
         <section className="w-full px-8 sm:px-16 py-32">
-          <article className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between gap-12">
+          <article className="max-w-7xl mx-auto flex flex-col lg:flex-row lg:items-center justify-between gap-12">
             <div className="max-w-lg">
               <h2 className="font-bold text-slate-100 text-xl lg:text-3xl mb-4">
                 About
               </h2>
               <p className="text-slate-500 text-xl lg:text-2xl lg:leading-[1.4]">
-                Hi, I'm Andrew. I've spent the past ten years writing code for
-                the web, leveraging my background in design to craft clean,
+                I've spent the past ten years writing code for
+                the web, leveraging my design background to craft clean,
                 user-friendly experiences. Currently, I'm building sales
                 forecasting software for the folks over at{" "}
                 <Link href="https://www.outreach.io/">Outreach</Link>, where I
@@ -46,7 +46,7 @@ export default function App() {
           </article>
         </section>
         <section className="w-full px-8 sm:px-16 py-64">
-          <article className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between gap-12">
+          <article className="max-w-7xl mx-auto flex flex-col lg:flex-row lg:items-center justify-between gap-12">
             <blockquote cite="https://keyholesoftware.com/writing-quality-code-practicing-make-it-work-make-it-right-make-it-fast/">
               <p className="font-extrabold leading-none [font-size:_clamp(2rem,7vw,5rem)] flex-1 mb-4">
                 Make it work.
@@ -55,19 +55,13 @@ export default function App() {
                 <br />
                 <span className="text-slate-600">Make it fast.</span>
               </p>
-              <footer className="text-xl font-normal text-slate-600 block">
-                - Kent Beck
-              </footer>
             </blockquote>
             <div>
               <h2 className="font-bold text-slate-100 text-xl lg:text-3xl mb-4">
                 Philosophy
               </h2>
               <p className="w-full max-w-lg text-slate-500 text-xl lg:text-2xl lg:leading-[1.4]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-                atque blanditiis assumenda natus aliquid sunt aperiam labore
-                ullam enim quisquam, voluptatem nesciunt facilis, alias ut
-                magnam vitae distinctio? Ipsam, a!
+                I've always loved this quote by Kent Beck, and it greatly informs how I approach building and designing software. My favorite step is "Make it work" - I'm a little bit obssessed with writing code that is reusable and easily shared.
               </p>
             </div>
           </article>
