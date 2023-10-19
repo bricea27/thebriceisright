@@ -27,10 +27,10 @@ body {
 @media (prefers-color-scheme: light) {
   :root {
     color: #fff;
-    background-color: #131417;
+    background-color: #020617;
     background-image: radial-gradient(
-      rgba(100, 116, 139, 0.1) 1px,
-      #090b16 1px
+      #0f172a 1px,
+      #020617 1px
     );
     background-size: 1rem 1rem;
     animation-name: polka;

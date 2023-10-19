@@ -16,8 +16,11 @@ export default function App() {
           </span>
         </h1>
       </hgroup>
-      <section className="w-full max-w-7xl mx-auto px-8 sm:px-16 py-32 animate-fade-in-up">
-        <article className="flex flex-wrap justify-between items-center">
+      <section className="w-full max-w-7xl mx-auto px-8 sm:px-16 py-32 animate-fade-in-up flex flex-wrap justify-between items-center">
+        <article>
+          <h2 className="font-bold text-slate-100 text-xl lg:text-3xl mb-4">
+            About
+          </h2>
           <p className="w-full max-w-lg text-slate-500 text-xl lg:text-2xl lg:leading-[1.4]">
             Hi, I'm Andrew. I've spent the past ten years writing code for the
             web, leveraging my background in design to craft clean,
@@ -26,25 +29,33 @@ export default function App() {
             not writing code (or reading about it), I'm either at the gym, at
             the movies, or at home making my son laugh.
           </p>
-          <div className="w-full max-w-md lg:max-w-lg lg:flex-1">
-            <img className="w-1/2 max-w-xs rounded-xl shadow-lg" src={headshot} />
-          </div>
         </article>
+        <div className="w-full max-w-md lg:max-w-lg lg:flex-1">
+          <img className="w-1/2 max-w-xs rounded-xl shadow-lg" src={headshot} />
+        </div>
       </section>
-      <section className="w-full max-w-7xl mx-auto px-8 sm:px-16 py-32 animate-fade-in-up flex">
-        <article className="flex flex-wrap justify-between items-center">
-          <h1 className="font-extrabold leading-none [font-size:_clamp(2rem,7vw,5rem)] animate-fade-in-up">
+      <section className="w-full max-w-7xl mx-auto px-8 sm:px-16 py-32 animate-fade-in-up flex flex-wrap justify-between items-center">
+        <blockquote cite="https://keyholesoftware.com/writing-quality-code-practicing-make-it-work-make-it-right-make-it-fast/">
+          <p className="font-extrabold leading-none [font-size:_clamp(2rem,7vw,5rem)] animate-fade-in-up flex-1 mb-4">
             Make it work.
             <br />
             <span className="text-slate-400">Make it right.</span>
             <br />
             <span className="text-slate-600">Make it fast.</span>
-            <span className="text-xl font-normal text-slate-600 block">
-              - Kent Beck
-            </span>
-          </h1>
+          </p>
+          <footer className="text-xl font-normal text-slate-600 block">
+            - Kent Beck
+          </footer>
+        </blockquote>
+        <article>
+          <h2 className="font-bold text-slate-100 text-xl lg:text-3xl mb-4">
+            Philosophy
+          </h2>
           <p className="w-full max-w-lg text-slate-500 text-xl lg:text-2xl lg:leading-[1.4]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum atque blanditiis assumenda natus aliquid sunt aperiam labore ullam enim quisquam, voluptatem nesciunt facilis, alias ut magnam vitae distinctio? Ipsam, a!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum atque
+            blanditiis assumenda natus aliquid sunt aperiam labore ullam enim
+            quisquam, voluptatem nesciunt facilis, alias ut magnam vitae
+            distinctio? Ipsam, a!
           </p>
         </article>
       </section>
@@ -61,15 +72,12 @@ export default function App() {
             <div className="flex flex-col sm:flex-row gap-2 sm:gap-8 text-base lg:text-xl">
               <Link href="mailto:bricea27@gmail.com">
                 <Envelope />
-                bricea27@gmail.com
               </Link>
               <Link href="https://github.com/bricea27">
                 <Github />
-                <span>Github</span>
               </Link>
               <Link href="https://www.linkedin.com/in/briceandrew/">
                 <LinkedIn />
-                LinkedIn
               </Link>
             </div>
           </div>
