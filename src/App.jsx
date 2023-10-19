@@ -30,8 +30,8 @@ export default function App() {
             my son laugh.
           </p>
         </article>
-        <div className="w-full max-w-md lg:max-w-lg lg:flex-1">
-          <img className="max-w-sm rounded-xl shadow-lg" src={headshot} />
+        <div className="w-full max-w-md lg:max-w-lg lg:flex-1 mt-10">
+          <img className="max-w-xs rounded-xl shadow-lg" src={headshot} />
         </div>
       </section>
       <section className="w-full max-w-7xl mx-auto px-8 sm:px-16 py-32 animate-fade-in-up flex flex-wrap justify-between items-center">
