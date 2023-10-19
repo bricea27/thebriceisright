@@ -24,14 +24,14 @@ export default function App() {
           <p className="w-full max-w-lg text-slate-500 text-xl lg:text-2xl lg:leading-[1.4]">
             Hi, I'm Andrew. I've spent the past ten years writing code for the
             web, leveraging my background in design to craft clean,
-            user-friendly experiences. Originally from the east coast, I now
-            live in Indianapolis with my wife, son, and our two dogs. When I'm
-            not writing code (or reading about it), I'm either at the gym, at
-            the movies, or at home making my son laugh.
+            user-friendly experiences. I currently live in Indianapolis with my
+            wife, son, and our two dogs. When I'm not writing code (or reading
+            about it), I'm either at the gym, at the movies, or at home making
+            my son laugh.
           </p>
         </article>
         <div className="w-full max-w-md lg:max-w-lg lg:flex-1">
-          <img className="w-1/2 max-w-xs rounded-xl shadow-lg" src={headshot} />
+          <img className="max-w-sm rounded-xl shadow-lg" src={headshot} />
         </div>
       </section>
       <section className="w-full max-w-7xl mx-auto px-8 sm:px-16 py-32 animate-fade-in-up flex flex-wrap justify-between items-center">
