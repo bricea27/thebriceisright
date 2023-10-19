@@ -26,10 +26,10 @@ export default function App() {
                 About
               </h2>
               <p className="text-slate-500 text-xl lg:text-2xl lg:leading-[1.4]">
-                I've spent the past ten years writing code for
-                the web, leveraging my design background to craft clean,
-                user-friendly experiences. Currently, I'm building sales
-                forecasting software for the folks over at{" "}
+                I've spent the past ten years writing code for the web,
+                leveraging my design background to craft clean, user-friendly
+                experiences. Currently, I'm building sales forecasting software
+                for the folks over at{" "}
                 <Link href="https://www.outreach.io/">Outreach</Link>, where I
                 spend my days working in React, TypeScript, and GraphQL.
                 <br />
@@ -61,15 +61,20 @@ export default function App() {
                 Philosophy
               </h2>
               <p className="w-full max-w-lg text-slate-500 text-xl lg:text-2xl lg:leading-[1.4]">
-                I've always loved this quote by Kent Beck, and it greatly informs how I approach building and designing software. My favorite step is "Make it work" - I'm a little bit obssessed with writing code that is reusable and easily shared.
+                I've always loved this quote by Kent Beck, and it greatly
+                informs how I approach building and designing software. My
+                favorite step is "Make it work" - I'm a little bit obssessed
+                with writing code that is reusable, consumable, and well
+                documented.
               </p>
             </div>
           </article>
         </section>
-        <footer className="w-full px-8 sm:px-16 py-32">
+
+        <footer className="w-full px-8 sm:px-16 py-3">
           <div className="w-full max-w-7xl mx-auto lg:flex-1 flex flex-col">
-            <h2 className="font-bold text-label text-xl lg:text-2xl lg:leading-[1.4] mb-4">
-              Let's chat
+            <h2 className="font-bold text-label text-xl lg:text-3xl lg:leading-[1.4] mb-4">
+              Contact
             </h2>
             <p className="max-w-md lg:max-w-xl text-slate-600 text-xl lg:text-2xl lg:leading-[1.4] mb-8">
               Whether you'd like to discuss an opportunity or simply talk shop,
