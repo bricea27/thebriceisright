@@ -27,9 +27,8 @@ body {
 @media (prefers-color-scheme: light) {
   :root {
     color: #fff;
-    background-color: #020617;
     background-image: radial-gradient(
-      #0f172a 1px,
+      #334155 1px,
       #020617 1px
     );
     background-size: 1rem 1rem;
