@@ -7,10 +7,10 @@ import headshot from "./assets/headshot.jpg";
 export default function App() {
   return (
     <>
-      <header className="flex font-sans w-full bg-gradient-to-b from-transparent via-transparent to-slate-950 px-8 sm:px-16 pt-8 sm:pt-16 pb-32">
+      <header className="flex min-h-screen font-sans w-full p-8 sm:p-16">
         <hgroup className="max-w-7xl flex flex-1 flex-col justify-between mx-auto">
           <Logo className="[width:_clamp(3rem,7vw,5rem)] stroke-slate-100 stroke-[10px] animate-draw-line fill-mode-forwards repeat-1" />
-          <h1 className="flex flex-1 flex-col justify-center font-extrabold leading-none [font-size:_clamp(2rem,7vw,5rem)] animate-fade-in-up mt-64">
+          <h1 className="sm:max-w-[80%] flex flex-1 flex-col justify-center font-extrabold leading-none [font-size:_clamp(2rem,5vw,4rem)] animate-fade-in-up">
             Hi, I'm Andrew,
             <span className="font-normal text-slate-500 block">
               a software engineer with a background in design.
@@ -18,7 +18,7 @@ export default function App() {
           </h1>
         </hgroup>
       </header>
-      <main className="w-full bg-slate-950 font-sans text-slate-100">
+      <main className="w-full bg-gradient-to-b from-transparent via-transparent to-slate-950 font-sans text-slate-100">
         <section className="w-full px-8 sm:px-16 py-64">
           <article className="max-w-7xl mx-auto flex flex-col lg:flex-row lg:items-center gap-32 lg:gap-0">
             <div className="flex-1">
