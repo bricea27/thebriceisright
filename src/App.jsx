@@ -69,7 +69,7 @@ export default function App() {
               </h2>
               <p className="text-slate-500 text-xl lg:text-2xl lg:leading-[1.4]">
                 I've always loved this quote by Kent Beck, and it greatly
-                informs how I approach building and designing software. My
+                informs how I approach designing and building software. My
                 favorite step is "Make it right" - I'm a bit obssessed with
                 writing code that is reusable, consumable, and well documented.
               </p>
