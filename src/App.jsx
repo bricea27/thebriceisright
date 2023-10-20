@@ -2,15 +2,15 @@ import { Envelope, Github, LinkedIn } from "./components/icons";
 import Link from "./components/Link";
 import Logo from "./components/Logo";
 
-import headshot from "./assets/headshot.jpg";
+import headshot from "./assets/headshot.png";
 
 export default function App() {
   return (
     <>
-      <header className="flex min-h-screen font-sans w-full p-8 sm:p-16">
+      <header className="flex min-h-screen font-sans w-full p-8 sm:p-16 bg-gradient-to-b from-transparent via-transparent to-slate-50">
         <hgroup className="max-w-7xl flex flex-1 flex-col justify-between mx-auto">
-          <Logo className="[width:_clamp(3rem,7vw,5rem)] stroke-slate-100 stroke-[10px] animate-draw-line fill-mode-forwards repeat-1" />
-          <h1 className="sm:max-w-[80%] flex flex-1 flex-col justify-center font-extrabold leading-none [font-size:_clamp(2rem,5vw,4rem)] animate-fade-in-up">
+          <Logo className="[width:_clamp(3rem,7vw,5rem)] stroke-slate-500 stroke-[10px] animate-draw-line fill-mode-forwards repeat-1" />
+          <h1 className="sm:max-w-[80%] flex flex-1 flex-col justify-center font-extrabold leading-none [font-size:_clamp(2rem,5vw,4rem)] animate-fade-in-up text-slate-900">
             Hi, I'm Andrew,
             <span className="font-normal text-slate-500 block">
               a software engineer with a background in design.
@@ -18,39 +18,34 @@ export default function App() {
           </h1>
         </hgroup>
       </header>
-      <main className="w-full bg-gradient-to-b from-transparent via-transparent to-slate-950 font-sans text-slate-100">
-        <section className="w-full px-8 sm:px-16 py-64">
-          <article className="max-w-7xl mx-auto flex flex-col lg:flex-row lg:items-center gap-32 lg:gap-0">
-            <div className="flex-1">
-              <h2 className="font-bold text-slate-100 text-xl lg:text-3xl mb-4">
-                About
-              </h2>
-              <p className="w-full flex-1 text-slate-500 text-xl lg:text-2xl lg:leading-[1.4]">
-                I've spent the past ten years writing code for the web,
-                leveraging my design chops to craft clean, user-friendly
-                experiences. Currently, I'm building sales forecasting software
-                for the folks over at{" "}
-                <Link href="https://www.outreach.io/">Outreach</Link>, where I
-                spend my days working in React, TypeScript, and GraphQL.
-                <br />
-                <br />
-                Originally from the east coast, I now live in the midwest with
-                my wife, son, and our two dogs. When I'm not writing code (or
-                reading about it), you can find me at the gym, at the movies, or
-                at home making my son laugh.
-              </p>
-            </div>
-            <div className="flex-1">
-              <img
-                className="lg:mx-auto mt-8 rounded-xl shadow-lg max-w-xs"
-                alt="Andrew Brice"
-                src={headshot}
-              />
-            </div>
+      <main className="w-full font-sans text-slate-500">
+        <section className="w-full px-8 sm:px-16 py-32 bg-slate-100 relative">
+          <article className="max-w-7xl mx-auto flex-col">
+            <h2 className="font-bold text-slate-900 text-xl lg:text-3xl mb-4">
+              About
+            </h2>
+            <p className="w-full max-w-xl lg:w-1/2 flex-1 text-slate-500 text-xl lg:text-2xl lg:leading-[1.4]">
+              I've spent the past ten years writing code for the web, leveraging
+              my design chops to craft clean, user-friendly experiences.
+              Currently, I'm building sales forecasting software for the folks
+              over at <Link href="https://www.outreach.io/">Outreach</Link>,
+              where I spend my days working in React, TypeScript, and GraphQL.
+              <br />
+              <br />
+              Originally from the east coast, I now live in the midwest with my
+              wife, son, and our two dogs. When I'm not writing code (or reading
+              about it), you can find me at the gym, at the movies, or at home
+              making my son laugh.
+            </p>
+            <img
+              className="lg:absolute bottom-0 right-0 w-1/2 max-w-[720px]"
+              alt="Andrew Brice"
+              src={headshot}
+            />
           </article>
         </section>
-        <section className="w-full px-8 sm:px-16 py-64">
-          <article className="max-w-7xl mx-auto flex flex-col lg:flex-row lg:items-center gap-32 lg:gap-0">
+        <section className="w-full px-8 sm:px-16 py-32 lg:py-64 bg-slate-50">
+          <article className="max-w-7xl mx-auto flex flex-col lg:flex-row lg:items-center gap-16 lg:gap-0">
             <blockquote
               className="flex-1"
               cite="https://keyholesoftware.com/writing-quality-code-practicing-make-it-work-make-it-right-make-it-fast/"
@@ -64,7 +59,7 @@ export default function App() {
               </p>
             </blockquote>
             <div className="flex-1">
-              <h2 className="font-bold text-slate-100 text-xl lg:text-3xl mb-4">
+              <h2 className="font-bold text-slate-900 text-xl lg:text-3xl mb-4">
                 Philosophy
               </h2>
               <p className="text-slate-500 text-xl lg:text-2xl lg:leading-[1.4]">
@@ -76,12 +71,12 @@ export default function App() {
             </div>
           </article>
         </section>
-        <footer className="w-full px-8 sm:px-16 py-32">
+        <footer className="w-full px-8 sm:px-16 py-32 bg-slate-50">
           <div className="w-full max-w-7xl mx-auto lg:flex-1 flex flex-col">
-            <h2 className="font-bold text-label text-xl lg:text-3xl lg:leading-[1.4] mb-4">
+            <h2 className="font-bold text-slate-900 text-xl lg:text-3xl lg:leading-[1.4] mb-4">
               Contact
             </h2>
-            <p className="max-w-md lg:max-w-xl text-slate-600 text-xl lg:text-2xl lg:leading-[1.4] mb-8">
+            <p className="max-w-md lg:max-w-xl text-slate-500 text-xl lg:text-2xl lg:leading-[1.4] mb-8">
               Whether you'd like to discuss an opportunity or simply talk shop,
               I'd love to connect!
             </p>
