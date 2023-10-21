@@ -1,24 +1,28 @@
-import { Envelope, Github, LinkedIn } from "./components/icons";
-import Link from "./components/Link";
+// import { Envelope, Github, LinkedIn } from "./components/icons";
+// import Link from "./components/Link";
 import Logo from "./components/Logo";
 
-import headshot from "./assets/headshot.jpg";
+// import headshot from "./assets/headshot.jpg";
 
 export default function App() {
   return (
     <>
-      <header className="flex min-h-screen font-sans w-full p-8 sm:p-16">
-        <hgroup className="max-w-7xl flex flex-1 flex-col justify-between mx-auto">
-          <Logo className="[width:_clamp(3rem,7vw,5rem)] stroke-slate-100 stroke-[10px] animate-draw-line fill-mode-forwards repeat-1" />
-          <h1 className="sm:max-w-[80%] flex flex-1 flex-col justify-center font-extrabold leading-none [font-size:_clamp(2rem,5vw,4rem)] animate-fade-in-up">
-            Hi, I'm Andrew,
-            <span className="font-normal text-slate-500 block">
-              a software engineer with a background in design.
+      <header className="flex min-h-screen font-sans w-full p-8 sm:p-16 bg-gradient-to-b from-transparent via-transparent to-merino-50 items-center place-content-center">
+        <Logo className="w-[60px] stroke-merino-900 stroke-[10px] animate-draw-line fill-mode-forwards repeat-1 absolute top-8 left-8" />
+        <hgroup className="max-w-sm md:max-w-2xl flex flex-1 flex-col mx-auto text-center animate-fade-in-up my-32">
+          <h1 className="font-black text-merino-950 text-4xl sm:text-5xl md:text-7xl leading-none tracking-tight animate-fade-in-up mb-8 mx-auto">
+            Andrew Brice
+            <span className="block text-merino-700 text-2xl sm:text-3xl md:text-5xl">
+              Software Engineer & Mentor
             </span>
           </h1>
+          <p className="font-normal text-merino-900 text-lg sm:text-xl md:text-2xl mb-4 mx-auto">
+            I've spent the past ten years writing code for the web, leveraging
+            my background in design to craft clean, user-friendly experiences.
+          </p>
         </hgroup>
       </header>
-      <main className="w-full bg-gradient-to-b from-transparent via-transparent to-slate-950 font-sans text-slate-100">
+      {/* <main className="w-full bg-gradient-to-b from-transparent via-transparent to-slate-950 font-sans text-slate-100">
         <section className="w-full px-8 sm:px-16 py-64">
           <article className="max-w-7xl mx-auto flex flex-col lg:flex-row lg:items-center gap-32 lg:gap-0">
             <div className="flex-1">
@@ -98,7 +102,7 @@ export default function App() {
             </div>
           </div>
         </footer>
-      </main>
+      </main> */}
     </>
   );
 }
