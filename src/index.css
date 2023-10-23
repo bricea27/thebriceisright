@@ -29,8 +29,8 @@ body {
     color: #fff;
     background-color: #020617;
     background-image:
-      radial-gradient(#d3bb9e 1px, transparent 1px),
-      radial-gradient(#d3bb9e 1px, #f3ede4 1px);
+      radial-gradient(#1e293b 1px, transparent 1px),
+      radial-gradient(#1e293b 1px, #020617 1px);
     background-size: 2rem 2rem;
     background-position-x: 0, 1rem;
     background-position-y: 0, 1rem;
