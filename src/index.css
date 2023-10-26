@@ -26,7 +26,28 @@ body {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #fff;
-    background-color: #131417;
+    color: #020617;
+    background-color: #020617;
+    background-image: radial-gradient(#1e293b 1px, transparent 1px),
+      radial-gradient(#1e293b 1px, #020617 1px);
+    background-size: 2rem 2rem;
+    background-position-x: 0, 1rem;
+    background-position-y: 0, 1rem;
+
+    animation-name: polka;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+}
+
+@keyframes polka {
+  0% {
+    background-position-x: 0rem, 1rem;
+    background-position-y: 0rem, 1rem;
+  }
+  100% {
+    background-position-x: 0rem, 1rem;
+    background-position-y: 2rem, 3rem;
   }
 }
