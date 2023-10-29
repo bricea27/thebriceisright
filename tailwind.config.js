@@ -5,7 +5,7 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontFamily: {
-      sans: ["DM Sans", "sans-serif"],
+      sans: ["greycliff-cf", "DM Sans", "sans-serif"],
     },
     extend: {
       animation: {

@@ -1,24 +1,24 @@
-import { Envelope, Github, LinkedIn } from "./components/icons";
-import Link from "./components/Link";
+// import { Envelope, Github, LinkedIn } from "./components/icons";
+// import Link from "./components/Link";
 import Logo from "./components/Logo";
 
-import headshot from "./assets/headshot.jpg";
+// import headshot from "./assets/headshot.jpg";
 
 export default function App() {
   return (
-    <>
-      <header className="flex min-h-screen font-sans w-full p-8 sm:p-16">
-        <hgroup className="max-w-7xl flex flex-1 flex-col justify-between mx-auto">
-          <Logo className="[width:_clamp(3rem,7vw,5rem)] stroke-slate-100 stroke-[10px] animate-draw-line fill-mode-forwards repeat-1" />
-          <h1 className="sm:max-w-[80%] flex flex-1 flex-col justify-center font-extrabold leading-none [font-size:_clamp(2rem,5vw,4rem)] animate-fade-in-up">
-            Hi, I'm Andrew,
-            <span className="font-normal text-slate-500 block">
-              a software engineer with a background in design.
+    <div className="w-full min-h-screen p-16 flex flex-col bg-slate-950 font-sans">
+      <header className="flex flex-1 flex-col items-center justify-center">
+        <hgroup className="w-full flex flex-1 flex-col items-center justify-center bg-gradient-to-b from-transparent via-transparent to-slate-900 rounded-xl">
+          <Logo className="w-[80px] stroke-slate-100 stroke-[10px] animate-draw-line fill-mode-forwards repeat-1 mb-8" />
+          <h1 className="font-extrabold leading-none text-5xl animate-fade-in-up text-center">
+            Andrew Brice
+            <span className="font-normal text-2xl text-slate-500 block">
+              Software Engineer & Mentor
             </span>
           </h1>
         </hgroup>
       </header>
-      <main className="w-full bg-gradient-to-b from-transparent via-transparent to-slate-950 font-sans text-slate-100">
+      {/* <main className="w-full bg-gradient-to-b from-transparent via-transparent to-slate-950 font-sans text-slate-100">
         <section className="w-full px-8 sm:px-16 py-64">
           <article className="max-w-7xl mx-auto flex flex-col lg:flex-row lg:items-center gap-32 lg:gap-0">
             <div className="flex-1">
@@ -98,7 +98,7 @@ export default function App() {
             </div>
           </div>
         </footer>
-      </main>
-    </>
+      </main> */}
+    </div>
   );
 }
