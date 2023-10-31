@@ -6,9 +6,9 @@ import Logo from "./components/Logo";
 
 export default function App() {
   return (
-    <div className="w-full min-h-screen p-16 flex flex-col bg-slate-950 font-sans">
+    <div className="w-full min-h-screen p-8 flex flex-col bg-slate-950 font-sans">
       <header className="flex flex-1 flex-col items-center justify-center">
-        <hgroup className="w-full flex flex-1 flex-col items-center justify-center bg-gradient-to-b from-transparent via-transparent to-slate-900 rounded-xl">
+        <hgroup className="w-full flex flex-1 flex-col items-center justify-center bg-gradient-to-b from-slate-900 via-transparent to-slate-950 rounded-xl">
           <Logo className="w-[80px] stroke-slate-100 stroke-[10px] animate-draw-line fill-mode-forwards repeat-1 mb-8" />
           <h1 className="font-extrabold leading-none text-5xl animate-fade-in-up text-center">
             Andrew Brice
