@@ -71,7 +71,7 @@ export default function App() {
             <h2 className="font-bold text-label text-xl lg:text-2xl lg:leading-[1.4] mb-4">
               Let's chat
             </h2>
-            <p className="max-w-md lg:max-w-xl text-slate-600 text-xl lg:text-2xl lg:leading-[1.4] mb-8">
+            <p className="max-w-md lg:max-w-xl text-slate-500 text-xl lg:text-2xl lg:leading-[1.4] mb-8">
               Whether you'd like to discuss an opportunity or simply talk shop,
               I'd love to connect!
             </p>
