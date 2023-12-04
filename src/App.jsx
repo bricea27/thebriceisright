@@ -7,10 +7,10 @@ import headshot from "./assets/headshot.jpg";
 export default function App() {
   return (
     <>
-      <header className="flex font-sans w-full bg-gradient-to-b from-transparent via-transparent to-slate-950 px-8 sm:px-16 pt-8 sm:pt-16">
+      <header className="flex font-sans w-full px-8 sm:px-16 pt-8 sm:pt-16">
         <hgroup className="max-w-7xl flex flex-1 flex-col justify-between mx-auto">
           <Logo className="[width:_clamp(3rem,7vw,5rem)] stroke-slate-100 stroke-[10px] animate-draw-line fill-mode-forwards repeat-1" />
-          <h1 className="flex flex-1 flex-col justify-center font-extrabold leading-none [font-size:_clamp(2rem,7vw,5rem)] animate-fade-in-up my-32">
+          <h1 className="sm:max-w-[80%] flex flex-1 flex-col justify-center font-extrabold leading-none [font-size:_clamp(2rem,5vw,4rem)] animate-fade-in-up my-32">
             Hi, I'm Andrew,
             <span className="font-normal text-slate-500 block">
               a software engineer with a background in design.
@@ -18,7 +18,7 @@ export default function App() {
           </h1>
         </hgroup>
       </header>
-      <main className="w-full bg-slate-950 font-sans text-slate-100">
+      <main className="w-full bg-gradient-to-b from-transparent via-transparent to-slate-950  font-sans text-slate-100">
         <section className="w-full px-8 sm:px-16 py-32">
           <article className="max-w-7xl mx-auto flex flex-col lg:flex-row lg:items-center justify-between gap-12">
             <div className="max-w-lg">
@@ -26,10 +26,10 @@ export default function App() {
                 About
               </h2>
               <p className="text-slate-500 text-xl lg:text-2xl lg:leading-[1.4]">
-                I've spent the past ten years writing code for
-                the web, leveraging my design background to craft clean,
-                user-friendly experiences. Currently, I'm building sales
-                forecasting software for the folks over at{" "}
+                I've spent the past ten years writing code for the web,
+                leveraging my design background to craft clean, user-friendly
+                experiences. Currently, I'm building sales forecasting software
+                for the folks over at{" "}
                 <Link href="https://www.outreach.io/">Outreach</Link>, where I
                 spend my days working in React, TypeScript, and GraphQL.
                 <br />
@@ -61,14 +61,17 @@ export default function App() {
                 Philosophy
               </h2>
               <p className="w-full max-w-lg text-slate-500 text-xl lg:text-2xl lg:leading-[1.4]">
-                I've always loved this quote by Kent Beck, and it greatly informs how I approach building and designing software. My favorite step is "Make it work" - I'm a little bit obssessed with writing code that is reusable and easily shared.
+                I've always loved this quote by Kent Beck, and it greatly
+                informs how I approach building and designing software. My
+                favorite step is "Make it work" - I'm a little bit obssessed
+                with writing code that is reusable and easily shared.
               </p>
             </div>
           </article>
         </section>
         <footer className="w-full px-8 sm:px-16 py-32">
           <div className="w-full max-w-7xl mx-auto lg:flex-1 flex flex-col">
-            <h2 className="font-bold text-label text-xl lg:text-2xl lg:leading-[1.4] mb-4">
+            <h2 className="font-bold text-slate-100 text-xl lg:text-3xl mb-4">
               Let's chat
             </h2>
             <p className="max-w-md lg:max-w-xl text-slate-500 text-xl lg:text-2xl lg:leading-[1.4] mb-8">
