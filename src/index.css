@@ -9,7 +9,16 @@
 
   color-scheme: light dark;
   color: #fff;
-  background-color: #131417;
+  background-color: #020617;
+  background-image: radial-gradient(#1e293b 1px, #020617 1px);
+  background-image: -webkit-radial-gradient(#1e293b 1px, #020617 1px);
+  background-image: -o-radial-gradient(#1e293b 1px, #020617 1px);
+  background-image: -moz-radial-gradient(#1e293b 1px, #020617 1px);
+  background-size: 2rem 2rem;
+  animation-name: polka;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -26,12 +35,12 @@ body {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #fff;
-    background-color: #020617;
-    background-image: radial-gradient(#1e293b 1px, #020617 1px);
-    background-image: -webkit-radial-gradient(#1e293b 1px, #020617 1px);
-    background-image: -o-radial-gradient(#1e293b 1px, #020617 1px);
-    background-image: -moz-radial-gradient(#1e293b 1px, #020617 1px);
+    color: #020617 ;
+    background-color:#f1f5f9;
+    background-image: radial-gradient(#cbd5e1 1px, #f1f5f9 1px);
+    background-image: -webkit-radial-gradient(#cbd5e1 1px, #f1f5f9 1px);
+    background-image: -o-radial-gradient(#cbd5e1 1px, #f1f5f9 1px);
+    background-image: -moz-radial-gradient(#cbd5e1 1px, #f1f5f9 1px);
     background-size: 2rem 2rem;
     animation-name: polka;
     animation-duration: 2s;
